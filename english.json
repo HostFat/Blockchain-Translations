@@ -5,9 +5,8 @@
 
 	"properties":{
 		"extends": "language"
-	}
+	},
 
 	"strings" : {
-
 	}
 }

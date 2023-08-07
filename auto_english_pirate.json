@@ -1,0 +1,278 @@
+{
+   "flag":"pirate.png",
+   "name":"English (Pirate)",
+   "strings":{
+      "connected_nodes":{
+         
+      },
+      "home":{
+         "other_links":{
+            
+         },
+         "table_headers":{
+            
+         },
+         "about":{
+            
+         }
+      },
+      "popular_addresses":{
+         
+      },
+      "transactions_summary":{
+         
+      },
+      "orphaned_blocks":{
+         
+      },
+      "api_index":{
+         
+      },
+      "transaction":{
+         
+      },
+      "deposit":{
+         
+      },
+      "wallet_forgot_identifier":{
+         
+      },
+      "stats":{
+         "table":{
+            
+         }
+      },
+      "block":{
+         "hash_table":{
+            
+         },
+         "summary_table":{
+            
+         }
+      },
+      "ip_info":{
+         
+      },
+      "double_spends":{
+         
+      },
+      "wallet_app":{
+         "transactions":{
+            
+         },
+         "errors":{
+            
+         },
+         "send_coins":{
+            
+         },
+         "tooltips":{
+            "connection_status":{
+               
+            },
+            "balance":{
+               
+            }
+         },
+         "nav":{
+            
+         },
+         "receive_money":{
+            
+         },
+         "account_settings":{
+            "nav":{
+               
+            }
+         },
+         "import_export":{
+            "rpc":{
+               
+            },
+            "import_backup_table":{
+               
+            },
+            "import_wallet_formats":{
+               
+            }
+         },
+         "login":{
+            
+         },
+         "wallet_home":{
+            
+         },
+         "modals":{
+            
+         },
+         "success":{
+            
+         }
+      },
+      "wallet":{
+         
+      },
+      "unconfirmed":{
+         
+      },
+      "hub_nodes":{
+         
+      },
+      "transaction_page":{
+         "double_spend":{
+            
+         }
+      },
+      "errors":{
+         
+      },
+      "relayed_by":{
+         
+      },
+      "rejected":{
+         
+      },
+      "webgl_globe":{
+         
+      },
+      "error_page":{
+         
+      },
+      "payment_request":{
+         
+      },
+      "propagation":{
+         
+      },
+      "ads":{
+         "bitinstant":{
+            
+         }
+      },
+      "translations_page":{
+         "steps":{
+            
+         }
+      },
+      "about_us":{
+         
+      },
+      "wallet_index":{
+         "anonymous":{
+            
+         },
+         "control":{
+            
+         },
+         "merchants":{
+            
+         },
+         "slides":{
+            
+         },
+         "easy":{
+            
+         },
+         "confused":{
+            
+         },
+         "tooltips":{
+            
+         },
+         "features":{
+            
+         },
+         "security":{
+            
+         }
+      },
+      "tx_tree":{
+         
+      },
+      "push_tx":{
+         
+      },
+      "maintenance":{
+         
+      },
+      "startup_message":{
+         
+      },
+      "donation_button":{
+         
+      },
+      "blocks":{
+         
+      },
+      "emails":{
+         "tx":{
+            
+         },
+         "two_factor_reset_request":{
+            
+         },
+         "password_hints":{
+            
+         },
+         "confirmation_code":{
+            
+         },
+         "wallet_backup":{
+            
+         },
+         "welcome":{
+            
+         },
+         "account_locked":{
+            
+         }
+      },
+      "largest_transactions":{
+         
+      },
+      "pools":{
+         
+      },
+      "wallet_new":{
+         
+      },
+      "header":{
+         
+      },
+      "misc":{
+         
+      },
+      "footer":{
+         
+      },
+      "charts":{
+         "errors":{
+            
+         }
+      },
+      "block_height":{
+         
+      },
+      "strange_transactions":{
+         
+      },
+      "notifications":{
+         
+      },
+      "address":{
+         "table_summary":{
+            
+         },
+         "table_transactions":{
+            
+         }
+      },
+      "ip_log":{
+         
+      }
+   },
+   "code":"en_pi",
+   "properties":{
+      "extends":"language"
+   }
+}

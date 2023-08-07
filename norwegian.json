@@ -1,0 +1,11 @@
+{
+   "flag":"no.png",
+   "code":"no",
+   "strings":{
+      
+   },
+   "name":"Norwegian",
+   "properties":{
+      "extends":"auto_norwegian"
+   }
+}

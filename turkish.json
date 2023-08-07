@@ -1,0 +1,11 @@
+{
+   "flag":"tr.png",
+   "code":"tr",
+   "strings":{
+      
+   },
+   "name":"Turkish",
+   "properties":{
+      "extends":"auto_turkish"
+   }
+}

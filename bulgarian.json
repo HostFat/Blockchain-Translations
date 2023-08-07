@@ -1,0 +1,11 @@
+{
+   "flag":"bg.png",
+   "code":"bg",
+   "strings":{
+      
+   },
+   "name":"Bulgarian",
+   "properties":{
+      "extends":"auto_bulgarian"
+   }
+}

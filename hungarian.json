@@ -1,0 +1,311 @@
+{
+   "flag":"hu.png",
+   "code":"hu",
+   "strings":{
+      "largest_transactions":{
+         
+      },
+      "charts":{
+         "mywallet_total_Beérkezett_per_day":"Saját Tárca: Összes Beérkezett Tranzakció Naponta:",
+         "errors":{
+            
+         }
+      },
+      "donation_button":{
+         
+      },
+      "transaction_page":{
+         "double_spend":{
+            
+         }
+      },
+      "popular_addresses":{
+         
+      },
+      "pools":{
+         
+      },
+      "block_height":{
+         
+      },
+      "redirect_page":{
+         
+      },
+      "connected_nodes":{
+         
+      },
+      "about_us":{
+         "availability_p1":" Legalább 99.5% -os rendelkezésre állást céloztunk meg, amiért mindent elkövetünk, de garanciát nem tudunk vállalni. A tervezett karbantartásokról email értesítőt küldünk minden felhaszálónak.",
+         "company_footer":"Blokkchain.info tulajdonosa és üzemeltetője a Qkos Services Ltd, Nagy-Britanniában bejegyzett cég. Cégjegyzékszám: 05106799",
+         "privacy_p1":"Nem tárolunk elérési logokat, csak egyszerű számlálót használunk a látogatottság mérésére. Semmi adatot nem tárolunk a Saját Tárca szolgáltatásban végzett tranzakciókról vagy a benne használt bitcoin címekről. A megadott email cím, skype azonsító vagy egyéb személyes adatok nem kerülnek megosztásra harmadik féllel vagy reklámszolgáltatókkal."
+      },
+      "stats":{
+         "table":{
+            
+         }
+      },
+      "payment_request":{
+         
+      },
+      "double_spends":{
+         
+      },
+      "api_index":{
+         "maximum":"Maximum"
+      },
+      "block":{
+         "summary_table":{
+            
+         },
+         "hash_table":{
+            
+         }
+      },
+      "startup_message":{
+         
+      },
+      "translations_page":{
+         "steps":{
+            
+         }
+      },
+      "relayed_by":{
+         
+      },
+      "ip_log":{
+         
+      },
+      "push_tx":{
+         
+      },
+      "ads":{
+         "bitinstant":{
+            
+         }
+      },
+      "propagation":{
+         
+      },
+      "deposit":{
+         "make_anonymous":"Legyen Anonim?",
+         "anonymous_help":"A bitcoinok az anonimizáló mixeren keresztül lesznek küldve (1.5% díj)."
+      },
+      "header":{
+         
+      },
+      "errors":{
+         
+      },
+      "notifications":{
+         
+      },
+      "ip_info":{
+         
+      },
+      "unconfirmed":{
+         
+      },
+      "wallet_new":{
+         "email_sub":"Ha szeretnéd, hogy email -ben elküldjük az új tárcád linkjét, adj meg egy érvényes email címet alább."
+      },
+      "wallet_app":{
+         "nav":{
+            
+         },
+         "wallet_home":{
+            
+         },
+         "success":{
+            "local_currency_updated":"Lokális Pénznem Sikeresen Frissítve"
+         },
+         "receive_money":{
+            "anonymous_addresses_description":"Az anonim címre érkező bitcoint továbbítjuk a tárcádban lévő címedre. Minden fizetést átküldünk a mixeren, így nem lesz visszakövethető a címzett. Az anonim módon kapott bitcoint nem lehet visszakövetni a tárcádig.",
+            "anonymous_addresses":"Anonim Címek",
+            "new_anonymous_address":"Új Anonim Cím",
+            "anonymous":"Anonim",
+            "anonymous_addresses_description2":"Anonim Címek egy tranzakcióra használhatóak csak és díjuk 1.5%."
+         },
+         "send_coins":{
+            "send_anonymously_bonus":"A mixer szolgáltatás jelenleg bónuszt ajánl fel a friss bitcoinokért. Jelenleg nincs külön díja a tranzakciónak és még {0} BTC bónuszt is kapsz.",
+            "send_anonymously_total":"A tranzakciós díjjal együtt a teljes összeg {0}",
+            "anonymous":"Anonim",
+            "send_anonymously_sub":"Használd az anonim küldést, hogy garantáltan ne lehessen összekötni a tranzakciót közted és a címzett között.",
+            "anonymous_transaction_fees":"Minden Anonim tranzakció díja {0}%.",
+            "send_anonymously_free":"A mixer szolgáltatás jelenleg ingyenes.",
+            "send_anonymously":"Anonim küldés"
+         },
+         "transactions":{
+            
+         },
+         "import_export":{
+            "import_wallet_formats":{
+               
+            },
+            "desktop_sync_step2_p1":" Hogy a böngésződ és az asztali kliensed kommunikálni tudjon, engedélyezd a bitcoin RPC szerver beállítást a bitcoin.conf fájlban. Ha a fájl nem létezik, akkor létre kell hoznod. Példa:",
+            "rpc":{
+               
+            },
+            "import_backup_table":{
+               
+            },
+            "installed_refresh_page":" Amint telepítetted, kérlek frissítsd az oldalt."
+         },
+         "login":{
+            "lost_identifier_p1":" Ha elvesztetted a átrca azonosítod, akkor keresd meg az email -t, amit regisztrációkor küldtünk. Nem találod az email -t? Kattints a gombra és küldönk egy újat."
+         },
+         "account_settings":{
+            "nav":{
+               
+            },
+            "integrity_check_run":"Futtatás"
+         },
+         "modals":{
+            "ask_for_anonymous_p1":"A mixer szolgáltatásunknak bitcoinra van szüksége. Ha ezen keresztül küldöd, a tranzakciód anonim lesz és még kapsz {0}% bónuszt is<\/b> ({1} BTC vissza lesz küldve a címedre). A tranzakció késlelteve jelenik meg {2}.",
+            "ask_for_anonymous_warning":"Ne fogadd el, ha nem szeretnél bitcoint visszakapni az adott címre. Az anonim tranzakciók nem kompatibilisak a SatoshiDICE, BitLotto és egyéb bitcoin játékokkal.",
+            "ask_for_anonymous":"Anonim Küldés?"
+         },
+         "errors":{
+            "error_updating_local_currency":"Hiba a Pénznem frissítésekor"
+         },
+         "tooltips":{
+            "balance":{
+               
+            },
+            "connection_status":{
+               
+            }
+         }
+      },
+      "wallet_forgot_identifier":{
+         
+      },
+      "rejected":{
+         
+      },
+      "footer":{
+         
+      },
+      "webgl_globe":{
+         
+      },
+      "hub_nodes":{
+         
+      },
+      "emails":{
+         "tx":{
+            
+         },
+         "confirmation_code":{
+            
+         },
+         "account_locked":{
+            
+         },
+         "two_factor_reset_request":{
+            
+         },
+         "password_hints":{
+            
+         },
+         "welcome":{
+            
+         },
+         "wallet_backup":{
+            "p1":"A levélhez csatolva megtalálod az AES titkosított tárcádat, ami minden adatot tartalmaz, hogy bármikor vissza tudd állítani a bitcoinjaid. Használhatod asztali klienshez {0} vagy bármilyen egyéb bitcoin alkalmazáshoz {1} . "
+         }
+      },
+      "transactions_summary":{
+         
+      },
+      "export_history":{
+         
+      },
+      "wallet_index":{
+         "confused":{
+            
+         },
+         "features":{
+            
+         },
+         "slides":{
+            
+         },
+         "security":{
+            
+         },
+         "anonymous":{
+            "p1":"Csak egy jelszóra van szükséges. Semmi más személyes adatot nem kérünk tőled. Nem látjuk a publikus kulcsod, sem a tranzakcióid vagy a számlaegyenleged.",
+            "p2":"Saját Tárca szolgáltatásban beépítve van",
+            "p3":"garantáltan 100% anonim tranzakciók.",
+            "mixing_service":"mixelő szolgáltatás",
+            "title":"Anonim"
+         },
+         "deposit":{
+            
+         },
+         "control":{
+            
+         },
+         "merchants":{
+            
+         },
+         "easy":{
+            
+         },
+         "tooltips":{
+            
+         }
+      },
+      "misc":{
+         
+      },
+      "error_page":{
+         
+      },
+      "wallet":{
+         
+      },
+      "address":{
+         "meta_description":"Tranzakciók küldve és fogadva a bitcoin címről ",
+         "table_summary":{
+            
+         },
+         "table_transactions":{
+            
+         }
+      },
+      "blocks":{
+         
+      },
+      "home":{
+         "other_links":{
+            
+         },
+         "table_headers":{
+            
+         },
+         "about":{
+            
+         }
+      },
+      "tx_tree":{
+         
+      },
+      "strange_transactions":{
+         
+      },
+      "maintenance":{
+         
+      },
+      "transaction":{
+         
+      },
+      "orphaned_blocks":{
+         
+      }
+   },
+   "name":"Hungarian",
+   "properties":{
+      "extends":"auto_hungarian"
+   }
+}

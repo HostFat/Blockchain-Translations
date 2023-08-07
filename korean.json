@@ -1,13 +1,11 @@
 {
-	"name":"Korean",
-	"code":"ko",
-	"flag":"kr.png",
-
-	"properties":{
-		"extends": "auto_korean"
-	}
-
-	"strings" : {
-
-	}
+   "flag":"kr.png",
+   "code":"ko",
+   "strings":{
+      
+   },
+   "name":"Korean",
+   "properties":{
+      "extends":"auto_korean"
+   }
 }

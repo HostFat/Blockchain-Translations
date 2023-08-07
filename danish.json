@@ -1,13 +1,720 @@
 {
-	"name":"Danish",
-	"code":"da",
-	"flag":"dk.png",
-
-	"properties":{
-		"extends": "auto_danish"
-	}
-
-	"strings" : {
-
-	}
+   "flag":"dk.png",
+   "code":"da",
+   "strings":{
+      "unconfirmed":{
+         "sub_header":"Levende opdateret liste over nye Bitcoin transaktioner",
+         "total_fees":"Samlet gebyr"
+      },
+      "wallet_new":{
+         "password_strength_p1":"Vi kræver en adgangskode på mindst 10 tegn for at sikre, at selv om vores database bliver kompromitteret vil din tegnebog forblive sikker. Et kodeord på 10 tegn vil tage over 1000 år at bryde.",
+         "dont_forget_password_p1":"Da din adgangskode ikke deles med os er det ekstremt vigtigt at huske den, hvis det er nødvendigt, skriv den på en post-it note nu. Der er ingen password gendannelses proces!",
+         "wallet_created_p1":"Din nye online tegnebog er blevet oprettet. Det er vigtigt, at du opbevarer både din tegnebogs-id og password sikkert. Vi er kun i stand til at hjælpe genfinde tabte tegnebogsidentifikatorer hvis du giver os en gyldig e-mailadresse. Vi kan ikke hjælpe med at genfinde tabte passwords!",
+         "wallet_created":"Ny tegnebog oprettet!",
+         "fav_recommendation":"Det anbefales du tilføjer dette til dine favoritter nu.",
+         "anonymity_policy":"Anonymitetspolitik",
+         "alias_placeholder":"kaldenavn eller ord som er let at huske"
+      },
+      "wallet_app":{
+         "nav":{
+            
+         },
+         "transactions":{
+            "no_transactions":"Normalt ville dine Bitcoin transaktioner være opført her, men du har ikke lavet nogen endnu.",
+            "escrow":"Deponering"
+         },
+         "import_export":{
+            "import_backup":"Importer sikkerhedskopi",
+            "advanced_warning_sub":"Denne sektion tillader dig at foretage ændringer i din tegnebog, som kan være komplicerede og forvirrende. Det anbefales at kun erfarne Bitcoin Users fortsætter herfra. Du bør have en forståelse af, hvad private nøgler er, og hvordan de relaterer til Bitcoin adresser.",
+            "advanced_warning_title":"Advarsel - Avancerede funktioner!"
+         },
+         "login":{
+            "yubikey_help":"Vælg teksten i boksen ovenfor og trykke på det grønne LED lys på din Yubikey.",
+            "lost_two_factor_p1":"Hvis du har mistet dine to faktor autentificering detaljer kan din tegnebog er stadig fuldt genetableres. Alt, hvad vi behøver, er rimeligt bevis på at du er kontoens ejer, det kan tilvejebringes ved at udfylde formularen på nedenstående link.",
+            "lost_two_factor_title":"Mistet to-faktor autentifikation - detaljer.",
+            "lost_identifier_p1":"Hvis du har mistet din tegnebog identifikator, kontroller først den bekræftelses e-mail, du modtog da du tilmeldte dig. Kan du ikke finde e-mailen? Klik på knappen nedenfor og vi kan sende dig en ny.",
+            "two_factor_reset":"Tofaktor Authentificering Reset",
+            "resend_link_p1":"E-mailen vil blive sendt fra wallet@blockchain.info. Vær sikker på at tjekke din spam folder. Hvis du stadig ikke kan finde e-mailen, klik på knappen nedenfor for at sende den igen.",
+            "sms_code_help":"En tekstmeddelelse er blevet sendt til din mobiltelefon. Indtast koden i meddelelsen ovenfor.",
+            "google_authenticator_help":"Du skal åbne app'en Google Autentificering og indtast den viste kode.",
+            "lost_identifier_title":"Mistet Identifier eller alias",
+            "lost_two_factor":"Tabt eller glemt to faktor autentificeringsdetaljer?",
+            "lost_two_factor_btn":"Reset Tofactor Authentificering",
+            "lost_password_p1":"Din tegnebog er krypteret af din browser, før den når frem til os, og af denne grund kan vi ikke hjælpe med at genfinde tabte passwords. For at undgå enhver mulig tab af penge som følge af glemte passwords, anbefales det du laver en papir backup af din tegnebogs private nøgler."
+         },
+         "account_settings":{
+            "password_notice":"Din adgangskode er aldrig delt med vores servere i nogen form. Det betyder, at din tegnebog stadig ville være sikker i tilfælde af at vores servere blev hacket. Det forhindrer også os i at se din saldo eller transaktionshistorie.",
+            "automatic_email_backups_description":"Afkryds dette for at modtage en ny backup automatisk, når din tegnebog opdateres:",
+            "skype_description":"Du vil modtage meddelelser via Skype til brugernavnet nedenfor:",
+            "fee_policy_description":"Blockchain.info transaktioner er gratis. Men Bitcoin netværket kan forlange en ekstra Miners Fee, der påvirker den hastigheden hvormed dine transaktioner bliver verificeret, og hjælper med at understøtte netværket. Skift indstillingerne nedenfor for at ændre gebyrpolitik.",
+            "two_factor_authentication":"To Faktor Autentifikation",
+            "example_password":"Hvis din tegnebog password var HorseBatteryStaple ville et god adgangskodetip være: Elektrisk hest?",
+            "main_password":"Hovedadgangskode",
+            "my_wallet_verifier":"My Wallet Verifier",
+            "two_factor_authentication_description":"To faktor-autentificering tilføjer et ekstra lag af sikkerhed ud over din adgangskode.",
+            "multiple_ip_comma_seperated":"Flere IP-adresser skal kommasepareres.",
+            "google_authenticator_warning":"Du bliver måske låst ud af din konto, hvis du forlader denne side uden at parre den mobile app eller deaktivere Google Autentificering.",
+            "yubikey_description":"Du parrer din nøgle med din konto ved at vælge tekstfeltet nedenfor og trykke på den grønne LED-knap på din yubikey enhed.",
+            "notifications_when":"Når Min Tegnebog",
+            "second_password_description":"Du kan eventuelt vælge en anden adgangskode, som vil være påkrævet, når sende penge fra din konto. For store tegnebøger kan din browser blive hænge i et par minutter, når du ændrer denne indstilling.",
+            "never_remember_two_factor":"Husk aldrig to-faktor login",
+            "password_hints_description":" Hvis du glemmer din adgangskode(r) kan et tip være nyttigt til at hjælpe din hukommelse på vej. Hvis der er en e-mail-adresse knyttet til din konto kan tippet blive sendt til dig. Hvis der ikke e-mail er tilknyttet din konto er tippet tilgængeligt for alle, der kender din tegnebogs identifikator.",
+            "fee_policy_normal_description":"Følg gebyrpolitikken foreslået af standard Bitcoin klienten.",
+            "enable_double_encryption":"Aktivér Dobbeltkryptering",
+            "disable_double_encryption":"Deaktiver Dobbeltkryptering",
+            "google_authenticator_description":"Åbn appen Google Autentificering og skan QR-koden nedenfor til at gennemføre parringen.",
+            "alias_placeholder":"Et kaldenavn eller andet let huskeligt ord",
+            "integrity_check_description":"Checker at alle nøgler i din tegnebog matcher den korrekte Bitcoin adresse og genkrypterer din tegnebog. Det kan tage lang tid i nogle browsere.",
+            "integrity_check_run":"Kør Kontrol",
+            "update_main_password":"Opdater Hovedpassword",
+            "sms_verified":"Bekræftet SMS",
+            "fee_policy_low_description":"Et gebyr vil ikke blive inkluderet, medmindre absolut nødvendigt.",
+            "my_wallet_verifier_description":"Hvis du er bekymret for sikkerheden anbefaler vi varmt at du installerer {0} browser udvidelse. My Wallet Verifyer kan hjælpe med at beskytte mod server side hacking, ondsindet javascript og phishing-angreb.",
+            "fee_policy_low":"Sparsommelig",
+            "device_pairing":"Enheds-parring",
+            "forgot_password_warning_p2":"Eventuelle glemte passwords vil resultere i at din tegnebog er utilgængelig. Der er ingen muligheder for at nulstille passwords!",
+            "one_confirmation":"En bekræftelse",
+            "main_password_hint":"Hovedadgangskode-tip:",
+            "restrict_to_ip_description":"Aktivér dette for at begrænse adgangen til din tegnebog til en bestemt IP-adresse eller flere IP-adresser separeret med komma. Aktiver kun dette, hvis du har en statisk IP-adresse. Du vil ikke være i stand til at logge ind eller få adgang til nogen API fra alle andre computere, der ikke er på det angivne netværk, dog vil de mobile apps fortsætte med at fungere, når parret.",
+            "fee_policy_high_description":"Gebyrer vil blive fastsat for at sikre transaktioner er høj prioritet (0,001 BTC grundgebyr).",
+            "enter_sms_code":"Indtast koden i bekræftelses-SMS beskeden.",
+            "sub_header":"Skift dine My Wallet kontoindstillinger.",
+            "fee_policy_low_warning":"Transaktioner vil være betydeligt langsommere til at blive bekræftet",
+            "second_password_hint":"Anden adgangskode-tip:",
+            "never_remember_two_factor_description":"Som standard efter at have logget ind med to-faktor autentificering vil din browser vil blive husket for en kort periode, så du kan logge ind igen uden at skulle autentificere. Afkryds her, hvis du ønsker at deaktivere denne opførsel, og kræver fuld godkendelse hver gang."
+         },
+         "modals":{
+            "delete_private_key_only":"Slet kun privat nøgle",
+            "label_help":"En etiket bruges til at hjælpe dig med huske, hvad denne adresse er til for. Det kan være navnet på en person eller virksomhed.",
+            "update_password":"Opdater Password",
+            "scan_using_webcam":"Scan med Webcam",
+            "label_address":"Navngiv adresse",
+            "sign_message":"Underskriv besked",
+            "sweep_keys_p1":"Sweep betyder at flytte alle disponible midler i en eller flere adresser til en anden adresse. Vælg en adresse, hvortil du ønsker at overføre midlerne fra de udvalgte adresser (Balance {0}).",
+            "verify_signature_placeholder":"Indtast signaturen for at kontrollere",
+            "claim_p1":"Vælg en af nedenstående muligheder for at gøre krav på dine bitcoins. Indtil du hæver dem, er afsenderen i stand til at annullere denne betaling.",
+            "transaction_information":"Transaktionsinformation",
+            "password_change_p1":"Din adgangskode vil blive opdateret med det samme. Vær sikker på at skrive den nye adgangskode ned, da det ikke kan gendannes hvis glemt! Hvis du har nogle krypterede backups af tegnebog, vil det være muligt at dekryptere dem ved brug af din gamle adgangskode, derfor anbefales det at du fjerner eventuelle gamle backups.",
+            "watch_only":"Watch Only",
+            "signing_please_wait":"Vent venligst. Underskriver Input nummer {0} ud af {1} ...",
+            "first_relayed":"Først videresendt",
+            "miners_fee_recommended_p1":"Denne transaktion har lav prioritet. Det anbefales, at du mindst betaler et 0,0005 BTC transaktionsgebyr for at sikre at miners behandler den.",
+            "ask_for_anonymous_warning":"Accepter ikke, hvis du forventer at modtage betaling tilbage til den afsendende adresse. Anonyme transaktioner er uforenelige med SatoshiDICE, BitLotto og mange andre Bitcoin spil.",
+            "private_key_needed":"Privat nøgle påkrævet",
+            "miners_fee_recommended":"Gebyr anbefalet",
+            "watch_only_warning_p2":"En {0} adresse betyder, at du kun kan observere transaktionerne på denne adresse. Medmindre du har den private nøgle gemt andetsteds så du ikke ejer midlerne på denne adresse.",
+            "watch_only_warning_p3":"Hvis du ikke har et papir pung eller anden backup, bør du ikke modtage bitcoins til denne adresse eller instruere nogen til at sende dig bitcoins på denne adresse",
+            "total_fees":"Samlet gebyr",
+            "watch_only_warning_p1":"Du modtager denne advarsel, fordi du har kopieret en {0}-adresse til udklipsholderen.",
+            "forward_to_client":"Videresend til desktop-klient",
+            "message_placeholder":"Indtast besked som du ønsker at underskrive",
+            "confirm_delete_warning":"Sletning af en forkert adresse vil medføre økonomiske tab. Hvis du ikke er sikker på hvad du gør, så tryk annullerer nu",
+            "verify_message_p1":"Brug dette værktøj verificere en meddelelse underskrevet af ejeren af en bestemt Bitcoin adresse",
+            "second_password_p1":"Denne handling kræver, at du indtaster din anden adgangskode, som er nødvendig for fuldt at dekryptere din tegnebog. Du bør aldrig indtaste dit andet password på en upålidelig computer. Brug tastaturet på skærmen til at yde en vis beskyttelse mod keyloggers.",
+            "address_not_synced_p1":"Denne adresse er ikke blevet gemt på vores servere endnu, og går måske tabt når du forlader denne side.",
+            "total_output_value":"Samlede output værdi",
+            "offline_instructions":"For at fuldføre transaktionen åben {0}. Kopier og indsæt nedenstående tekst i tekstområdet, og tryk send for at fuldføre transaktionen. <\/P>",
+            "address_book_label_placeholder":"Navn på person eller handlende",
+            "address_book_label_help":"Indtast Label til denne adresse. fx navnet på personen eller firma navn.",
+            "total_relayed":"Total videresendt",
+            "add_address_book_entry_placeholder":"Indtast den Bitcoin adresse, du ønsker at tilføje til din adressebog.",
+            "add_watch_only_address_p3":"Hvis du ikke er klar over forskellen mellem en Bitcoin adresse og en privat nøgle så ønsker du ikke at gøre dette.",
+            "verify_result":"Dette budskab blev underskrevet af adresse {0}. <br\/> Modsvarer det den adresse, du havde forventet?",
+            "first_seen":"Først set",
+            "created_offline_p1":"Din transaktion er blevet oprettet, men er endnu ikke blevet udsendt til p2p-netværket.",
+            "mining_pools":"Mining Pools",
+            "compressed_private_key_p1":"Komprimerede private nøgler understøttes ikke i øjeblikket hvis du bruger Android app, iPhone app eller Merchant API. Hvis du importerer en komprimeret privat nøgle direkte vil du ikke være i stand til at bruge midlerne på denne adresse ved hjælp af de tidligere anførte enheder.",
+            "compressed_private_key_p2":"Den anbefalede løsning er at overføre midler i en eksisterende Bitcoin adresse. Kunne du tænke dig at i stedet at overføre fra denne private nøgle?",
+            "compressed_private_key":"Komprimeret private nøgle detekteret",
+            "creating_transaction":"Oprettelse af Transaktion",
+            "ask_for_anonymous_p1":"Vores Bitcoin mixer har brug for dine mønter. Send denne transaktion anonymt og få en {0}% bonus <\/ b> ({1} BTC vil blive sendt tilbage til den afsendende adresse). Transaktionen vil blive forsinket ca {2}.",
+            "add_watch_only_address":"Tilføj Watch Only Bitcoin adresse",
+            "password_change":"Bekræft adgangskodeændring",
+            "label_placeholder":"Label fx Opsparing",
+            "miners_fee_recommended_warning":"Hvis du ikke betaler et gebyr kan denne transaktion tage lang tid at få bekræftet. Alle midler vil blive returneret til dig efter cirka 24 timer.",
+            "add_fee":"Tilføj gebyr",
+            "sweep_to":"Sweep Til:",
+            "claim_zero_balance":"Beløbet på denne Bitcoin adresse er nul. Betalingen kan allerede være hævet eller transaktionen blev annuleret af afsenderen.",
+            "label":"Label:",
+            "login_to_my_wallet":"Login til Min Tegnebog",
+            "confirm_delete_countdown":"Du har {0} sekunder for at ændre skifte mening ...",
+            "sign_message_sub":"Brug dette værktøj til at underskrive en meddelelse, der beviser, at du ejer en adresse. Underskriv kun meddelelser, du er helt enig i, underskrive aldrig vage beskeder. Når du trykker kan din browser hænge et par sekunder.",
+            "watch_only_warning":"Watch Only adresse advarsel",
+            "network_percent":"% af netwærket"
+         },
+         "disconnected":"FORBINDELSE AFBRUDT",
+         "wallet_home":{
+            "phone_deposit":"Telefoninbetaling",
+            "final_balance":"Saldo",
+            "this_is_your_bitcoin_address":"Dette er din Bitcoin adresse",
+            "total_transactions":"Transaktioner I Alt",
+            "deposit":"Indsæt",
+            "backup_description":"Sikkerhedskopiering af din tegnebog er et vigtigt skridt, som er let at glemme. Blockchain.info tager alle forholdsregler for at holde din tegnebog sikker, men det er altid bedre at opbevare en lokal kopi for en sikkerheds skyld.",
+            "withdraw_description":"Brug tjenesterne nedenfor for at konvertere bitcoins tilbage til din lokale valuta.",
+            "pingit_deposit":"PingIt indbetaling",
+            "share_with_anyone":"Del denne med nogen, og de kan sende dig betalinger.",
+            "deposit_description":"Den hurtigste og nemmeste måde at indbetale bitcoins på din konto, er at bruge tjenesterne nedenfor.",
+            "cash_deposit":"Indbetal kontant",
+            "withdraw":"Hæv"
+         },
+         "success":{
+            "alias_updated":"Alias er blevet opdateret",
+            "sms_updated":"SMS nummer er blevet opdateret. Verifikationsbesked er sendt.",
+            "saved_to_dropbox":"Tegnebog er gemt i Dropbox. Du kan nu lukke dette vindue",
+            "confirmation_email_sent":"Bekræftelsesemail sendt",
+            "updated_ip_address":"IP-adresser opdateret",
+            "two_factor_authentication_request_approved":"To Factor Authentication Reset Anmodning Godkendt. Anmodningen vil blive gennemset snarest.",
+            "email_code_sent":"Tofaktor Authentificeringsemail sendt",
+            "secret_phrase_updated":"Hemmelig sætning blev opdateret",
+            "saved_to_google_drive":"Tegnebog blevet gemt til Google Drev. Du kan nu lukke dette vindue",
+            "email_code_resent":"Email kode gensendt. Tjek din spam folder! Hver manuel e-mail anmodning tæller som et fejlslagent login forsøg",
+            "wallet_backup_sent":"Tegnebog sikkerhedskopi sendt."
+         },
+         "receive_money":{
+            "sub_header":"Dine indgående Bitcoin adresser",
+            "group_by_taint":"Gruppér adresser ved Taint",
+            "anonymous_addresses_description":"Betalinger modtaget til anonyme adresser vil blive sendt til en anden adresse i din tegnebog. Eventuelle modtagne betalinger sendes via en mixer for at isolere dit personlige tegnebog fra afsenderen. Transaktioner modtaget til anonyme adresser kan ikke blive sporet til din almindelige tegnebog.",
+            "chord_diagram":"Se Relationsdiagram",
+            "forward_to":"Videresend til",
+            "new_address_tooltip":"Klik her for at generere en nyt Bitcoin adresse. Du kan begynde at modtage bitcoins til denne adresse med det samme",
+            "delete_keys":"Slet Nøgler",
+            "archived_addresses_description":"Arkiverede adresser er adresser, du måske ikke har brug for længere, der er skjult i hovedvisningen, men stadig en del af din tegnebog. Du kan genaktivere dem når som helst ved at klikke på det blå ikon.",
+            "new_anonymous_address":"Ny Anonym Adresse",
+            "anonymous_addresses_description2":"Anonyme adresser er kun gyldige for én transaktion pålægges et 1,5% transaktionsgebyr.",
+            "expires_in":"Udløber i"
+         },
+         "send_coins":{
+            "to_address_help":"Indtast Bitcoin adresse på modtageren",
+            "transaction_types":"Transaktionstype",
+            "facebook_help":"Indtast navnet på facebook modtageren",
+            "amount_help":"Indtast beløbet i Bitcoins som skal sendes",
+            "review_payment":"Gennemse betaling",
+            "send_via_sms_sub":"Brug formularen nedenfor til at sende Bitcoins via SMS.",
+            "pending":"venter",
+            "place_bet":"Indgå væddemål!",
+            "send_anonymously_bonus":"Mixeren betaler i øjeblikket en bonus for friske mønter. Der bliver ingen gebyrer for denne transaktion, og en bonus på {0} BTC vil blive udbetalt.",
+            "amount_tooltip":"Beløbet i Bitcoins som skal sendes",
+            "miners_fee_tooltip":"Dette gebyr vil blive sendt til Bitcoin miners, og kan hjælpe din transaktion til at blive behandlet hurtigere",
+            "escrow":"Deponering",
+            "anonymous_transaction_fees":"Alle anonyme transaktioner pålægges et gebyr på {0}%.",
+            "custom_transaction_sub":"Brug formularen nedenfor til at sende en betaling til en eller flere Bitcoin adresser. Du vil blive bedt om at gennemgå din transaktion, før den sendes.",
+            "satoshi_dice_sub":"{0} er det mest populære Bitcoin betting spil. Vind op til 64.000 x din indsats, øjeblikkeligt. Alle terningkast kan verificeres ved hjælp af blokkæden.",
+            "btcdice_sub":"{0} - Vælg odds, lav et væddemål og modtag dine gevinster på få sekunder.",
+            "review_payment_tooltip":"Klik her for at gennemse betalingen. Du vil kunne bekræfte eller annullere transaktionen.",
+            "send_via_email_sub":"Brug formularen nedenfor til at sende Bitcoins til en e-mailadresse.",
+            "send_anonymously_total":"Inklusiv gebyrer er summen af denne transaktion {0}",
+            "send_anonymously_sub":"Brug Send Anonymt til at sikre, at transaktionen ikke kan spores mellem afsender og modtager.",
+            "send_via_facebook_sub":"Brug formularen nedenfor til at sende Bitcoins til en Facebook ven.",
+            "miners_fee":"Gebyr",
+            "public_note_placeholder":"Denne besked vil blive permanent indlejret i blokkæden. Alle kan læse den.",
+            "to_address_tooltip":"Dette er Bitcoin adressen på modtageren.",
+            "change_address_tooltip":"Eventuelle byttepenge vil blive sendt tilbage til denne adresse",
+            "address_book_sub":"Adressebogen indeholder en liste adresser du kan sende til. Du kan bruge den til at gemme Bitcoin adresser på personer, du kender eller handlende, du ofte bruger."
+         },
+         "errors":{
+            "password_hints_not_set":"Password Tips er ikke blevet fastsat for denne tegnebog",
+            "mobile_identifier_not_found":"Tegnebog identifikator ikke fundet. Din tegnebog er endnu ikke gemt på vores server endnu. Venligst opret en ny konto for at undgå at miste din tegnebog.",
+            "error_generating_auth_code":"Fejl ved generating af autentificeringskode",
+            "alias_in_use":"Alias i brug af en anden tegnebog",
+            "error_sending_wallet_backup":"Fejl ved afsendelse af tegnebogsbackup",
+            "error_saving_to_dropbox":"Fejl ved lagring på Dropbox",
+            "error_saving_wallet":"Fejl ved lagring af tegnebog",
+            "checksum_invalid":"Checksum ikke gyldig",
+            "error_saving_to_google_drive":"Fejl ved at gemme til Google Drev",
+            "reached_email_limit":"Du har nået din epost-grænse for i dag (Maximum {0} e-mails)",
+            "checksum_reread_failed":"Tegnebog blev opdateret, men checksum kunne ikke valideres ved genlæsning! Dette er en alvorlig fejl, du bedes kontakte {0}",
+            "error_updating_auth_saving":"Fejl ved opdatering af autentificeringsindstillinger",
+            "error_updating_language":"Fejl ved opdatering af sprog",
+            "sms_number_in_use":"Dette mobilnummer er allerede knyttet til en anden tegnebog",
+            "error_sending_password_hints":"Ukendt fejl ved afsendelse af password hints"
+         },
+         "tooltips":{
+            "balance":{
+               "tip":"Her vises saldoen på din Bitcoin tegnebog. Du vil ikke være i stand til at bruge dette beløb, før alle transaktioner er bekræftede."
+            },
+            "connection_status":{
+               "tip":"Hvis afbrudt, skal du opdatere siden for at se nye transaktioner. Når den er tilsluttet vil nye transaktioner blive vist med det samme."
+            }
+         }
+      },
+      "largest_transactions":{
+         "meta_description":"En liste over de største nylige Bitcoin transaktioner"
+      },
+      "charts":{
+         "my_wallet_n_users2":"Antal tegnebøger gemt ved hjælp af vores My Wallet Service.",
+         "days_destroyed_cumulative2":"Bitcoin Destroyed Days er et mål for transaktionsomfanget af Bitcoin. Hvis nogen har 100 BTC at de har modtaget en uge siden, og de bruger dem, så er 700 Bitcoin dage blevet ødelagt. Hvis de tager de 100BTC og sende dem til flere adresser, og derefter bruger dem så selv om den samlede transaktion volumen kunne være vilkårligt stort er antal Bitcoin Days Destroyed stadig 700.",
+         "all_time":"Alle tider",
+         "my_wallet_transaction_volume_label":"Transaktionsvolumen (BTC)",
+         "estimated_transaction_volume_usd":"Anslået USD Transaktionsvolumen",
+         "my_wallet_transaction_volume2":"24 hr transactionsvolumen af vores web wallet service.",
+         "days_destroyed_filter_month2":"Filtreret med minimum input alder af 1 måned.",
+         "blockchain_size_label":"Megabytes",
+         "estimated_transaction_volume_usd2":"De anslåede transaktionsvolumen i USD.",
+         "my_wallet_n_tx":"My Wallet antal transaktioner pr dag",
+         "cost_per_transaction2":"Et diagram som viser miners indtægter divideret med antallet af transaktioner.",
+         "days_destroyed":"Bitcoin Days Destroyed",
+         "miners_revenue2":"Historiske data, der viser antal bitcoins genereret per dag + transaktionsgebyrer * markedspris.",
+         "total_bitcoins2":"En graf, der viser det historiske data for samlede antal bitcoins, der er blevet udvundet.",
+         "cost_percent_per_transaction_label":"% Af transaktionsvolumen",
+         "my_wallet_transaction_volume":"My Wallet Transaktionsvolumen",
+         "my_wallet_n_users_label":"Antal brugere",
+         "n_unique_addresses":"Antal af unikke brugte Bitcoin adresser",
+         "days_destroyed_label":"Days Destroyed",
+         "days_destroyed_filter_year":"Bitcoin Days Destroyed (filtreret af min. alder på 1 år)",
+         "operating_margin2":"Grafen viser miners' indtægter minus forventede el og båndbredde omkostninger.",
+         "mywallet_balance_over_time":"Min tegnebog: Saldo over tid",
+         "estimated_transaction_volume2":"Svarende til den samlede mængde med tilføjelse af en algoritme, der forsøger at fjerne byttepenge fra den samlede værdi. Dette måske en mere præcis afspejling af den sande transaktionsvolumen.",
+         "meta_description":"De mest populære diagrammer og statistik om Bitcoin netværket. Antal transaktioner om dagen, markedspris, mængdediagrammer osv.",
+         "n_of_transactions_per_day":"Antal transaktioner pr dag",
+         "avg_confirmation_time_label":"Bekræftelsetid (minutter)",
+         "blockchain_size2":"Den samlede størrelse af alle blok-headers og transaktioner. Ikke inklusiv databaseindekser.",
+         "market_price":"Markedspris (USD)",
+         "my_wallet_n_users":"My Wallet antal brugere",
+         "my_wallet_n_tx2":"Antal transaktioner foretaget af My Wallet Brugere per dag.",
+         "market_price_usd":"Markedspris (USD)",
+         "day_average_7":"7-dages gennemsnit",
+         "transaction_fees2":"A diagrammer, der viser den samlede BTC værdi af transaktionsgebyrer miners tjener per dag.",
+         "blockchain_size":"Blokkædens størrelse",
+         "avg_confirmation_time":"Gennemsnitlig bekræftelsestid per transaktion",
+         "trade_vol_label":"Handelsvolumen (USD)",
+         "days_destroyed_filter_month":"Bitcoin Days Destroyed (filtreret af min. alder 1 måned)",
+         "cost_percent_per_transaction2":"Et diagram viser miners omsætning som procent af transaktionsomfanget.",
+         "balance_of_address":"Saldo på Bitcoin adresse:",
+         "network_deficit":"Netværksunderskud",
+         "mywallet_total_Received_per_day":"My Wallet: Total modtaget per dag til:",
+         "n_transactions_excluding_popular2":"Et diagram af det samlede antal unikke Bitcoin transaktioner per dag eksklusiv transaktionser, som involverer de 100 mest",
+         "mywallet_total_btc_received":"My Wallet: BTC Modtaget",
+         "days_destroyed_filter_year2":"Filtreret ved minimum input alder på 1 år.",
+         "avg_confirmation_time2":"Den gennemsnitlige tid det tager for transaktioner at blive accepteret i en blok.",
+         "estimated_transaction_volume":"Anslået Transaktionsvolumen",
+         "days_destroyed_cumulative":"Bitcoin Days Destroyed Kumulativ",
+         "output_volume_label":"Output volumen (BTC)",
+         "final_balance":"Endelig Saldo",
+         "cost_percent_per_transaction":"Pris i % af transaktionsvolumen",
+         "network_deficit2":"Viser forskellen mellem transaktionsgebyrer og omkostninger til Bitcoin minedrift.",
+         "days_destroyed_filter_week":"Bitcoin Days Destroyed (filtreret af min. alder 1 uge)",
+         "output_volume2":"Den samlede værdi af alle transaktioners output per dag. Dette omfatter mønter, der blev returneret til afsenderen som byttepenge.",
+         "network_deficit_label":"Netværksunderskud (USD)",
+         "estimated_transaction_volume_usd_label":"Transaktionsvolumen (USD)",
+         "trade_vol2":"Et diagram, der viser USD handelsvolumen fra de bedste børser.",
+         "miners_revenue":"Miners indtægter",
+         "days_destroyed2":"En ikke-kumulativ version af Bitcoin Days Destroyed."
+      },
+      "transaction_page":{
+         "tree_chart":"Se Træ-grafik",
+         "total_output":"Samlet output",
+         "estimated_possibly_never":"Muligvis Aldrig (Dobbeltbetaling)",
+         "minutes":"minutter",
+         "bytes":"bytes",
+         "reward_from_block":"Belønning fra Blok",
+         "estimated_btc_transacted":"Anslået BTC overført",
+         "double_spend":{
+            "p1":"Advarsel! denne transaktion er en dobbeltbetaling af",
+            "p2":"Du bør være meget forsigtig med at stole på enhver transaktion til \/ fra denne afsender."
+         },
+         "received_time":"Modtaget Tidspunkt",
+         "network_propagation":"Udbredelse på netværket (klik for at se)",
+         "strange":"Mærkelig"
+      },
+      "rejected":{
+         "header":"Liste over afvisninger",
+         "title":"Afviste Transaktioner & Blokke - Blockchain.info"
+      },
+      "footer":{
+         "nodes_connected":"Forbundne Knudepunkter"
+      },
+      "webgl_globe":{
+         "header":"Globale Bitcoin Knudepunkter",
+         "title":"Web GL Globe over Bitcoin Knudepunkter - Blockchain.info",
+         "miners":"Miners"
+      },
+      "pools":{
+         "sub_header":"Et skøn over hashrate fordeling blandt de største mining pools",
+         "meta_description":"Et cirkeldiagram viser hashrate fordelingen mellem de store Bitcoin mining pools",
+         "p1":"Nedenstående graf viser markedsandelen af de mest populære Bitcoin mining puljer. Det bør kun bruges som et groft estimat og vil af forskellige årsager ikke vil være 100% korrekt.",
+         "count":"antal",
+         "warning":"En stor andel af ukendte blokke betyder ikke et angreb på netværket, det betyder blot, at vi har været i stand til at fastslå oprindelsen."
+      },
+      "block_height":{
+         "sub_header":"Blokke på dybde {0} i Bitcoin blokkæden",
+         "meta_description":"Bitcoin blokke i højden {0} i Bitcoin blokkæden",
+         "received_by":"Modtaget Tid",
+         "previous_block":"Forrige Blok",
+         "block_reward":"Blokbelønning",
+         "next_blocks":"Næste Blokke",
+         "header":"Blok Højde {0}",
+         "title":"Bitcoin blokke i højden {0}",
+         "estimated_transaction_volume":"Anslået transaktionsvolumen",
+         "nonce":"Nonce",
+         "no_blocks":"Ingen blokke fundet i denne højde",
+         "error_fetching_blocks":"Ukendt fejl ved hentning blokke fra database"
+      },
+      "hub_nodes":{
+         "sub_header":"Viser knudepunkter, der har først har videresendt flest transaktioner til blockchain.info. Knudepunkterne på denne side er godt forbundende og ofte hub knudepunkter for købmænd eller miners.",
+         "meta_description":"IP-adresser på Bitcoin knudepunkter som videresender flest transaktioner til blockchain.info",
+         "relay_count":"Antal videresendelser",
+         "header":"Hub knudepunkter",
+         "title":"Bitcoin Hub knudepunkter - Blockchain.info"
+      },
+      "emails":{
+         "tx":{
+            "header_sent":"Meddelelse om afsendt betaling",
+            "header_received":"Meddelelse om modtaget betaling"
+         },
+         "confirmation_code":{
+            "p1":"Et forsøg er gjort på at logge ind på din Min Tegnebog konto fra IP-adresse {0}. Indtast bekræftelseskoden nedenfor for at få adgang til din konto. Hvis det ikke var dig, der gjorde dette login forsøg, kan du ignorere denne e-mail."
+         },
+         "account_locked":{
+            "p1":"En række af mislykkede forsøg er blevet gjort for at logge på til din My Wallet-konto. For din beskyttelse er der lukket for nye login-forsøg indtil {0}",
+            "p2":"Hvis disse login-forsøg ikke blev gjort af dig, anbefales det du ændrer din adgangskode, så snart kontoen er tilgængelig igen. Hvis du er særligt bekymret så kontakt os og vi vil forlænge låsningen."
+         },
+         "two_factor_reset_request":{
+            "p3":"Hvis denne anmodning ikke blev foretaget af dig skal du åbne følgende webadresse til at <b>afvise denne anmodning <\/ b>:",
+            "p4":"Det er muligt nogen måske prøver at få ondsindet adgang til dit Bitcoin tegnebog. Vær venlig ikke at ignorere denne anmodning."
+         },
+         "tip_backup":"Backup din Bitcoin tegnebog med Dropbox. Det er gratis, let at bruge og sikkert.",
+         "password_hints":{
+            "p1":"Du modtager denne e-mail, fordi en anmodning blev fremsat for at se din tegnebogs adgangskodetip.",
+            "main_hint":"Hovedadgangskode-tip:",
+            "header":"Min Tegnebog password tip",
+            "second_hint":"Anden adgangskode-tip:"
+         },
+         "welcome":{
+            "notifications_enabled":"Meddelelser er aktiveret"
+         },
+         "tip_reversible":"Denne betaling kan annulleres af afsenderen indtil den er hævet.",
+         "wallet_backup":{
+            "p1":"Vedhæftet denne e-mail er en AES krypteret tegnebogsbackup, der indeholder alt hvad du behøver for at gendanne din Bitcoin balance. Du kan bruge det til at gendanne tegnebogen når som helst ved {0} eller ved hjælp af 3. parts {1} Desktop klient.",
+            "header":"Tegnebog sikkerhedskopi"
+         }
+      },
+      "connected_nodes":{
+         "total_connected":"I alt tilsluttet: {0}",
+         "header":"Forbundne knudepunkter",
+         "title":"Liste over forbundne Bitcoin knudepunkter"
+      },
+      "stats":{
+         "meta_description":"Over 100 forskellige Bitcoin marked og netværks statistikker. Antal knuder, transaktionsvolumen, Mining sværhed og meget mere.",
+         "notice2":"For overskudsgraden hardware skønnes omkostninger at være $1000 pr gigahash hvert 2. år, og båndbredde $1 pr gigahash om året.",
+         "notice1":"Elforbruget er estimeret baseret på strømforbrug på 650 watt pr gigahash og elpris på 15 cent per kilowatt-time. I virkeligheden vil nogle miners være mere eller mindre effektive.",
+         "period":"Alle statistikker er for den foregående 24 timers periode medmindre andet er angivet",
+         "header":"Valuta Statistik",
+         "table":{
+            "trade_volume":"Handelsvolume",
+            "percent_of_transaction_volume":"% Af transaktionsvolumen",
+            "electricity_cost":"Omkostninger til el",
+            "total_output_volume":"Total Output Volumen",
+            "cost_per_transaction":"Omkostning per transaktion",
+            "profit_margin":"Profitmargin",
+            "market_price":"Markedspris",
+            "market_summary":"Market resume",
+            "blocks_mined":"Genererede blokke",
+            "estimated_transaction_volume":"Anslået transactionsvolume",
+            "hash_rate_electricity":"Hashrate og elforbrug",
+            "bitcoins_mined":"Bitcoins genereret"
+         }
+      },
+      "payment_request":{
+         "p1":"Brug denne formular til at anmode om at nogen sender dig bitcoins eller simpelthen for at vise folk, at du har en Bitcoin adresse.",
+         "title":"Betalingsanmodning {0}"
+      },
+      "about_us":{
+         "company_footer":"Blockchain.info ejes og drives af Qkos Services Ltd registreret under det britiske selskabsnummer 05106799",
+         "up_time_alt":"Oppetid for blockchain.info: Seneste 30 dage",
+         "security_p1":"Vores sikkerhedspolitik er at holde så få data som muligt, der i tilfælde af et brud på sikkerheden kan påvirke vores brugere. Ved brug af vores My Wallet service, opbevarer eller opsnapper vi ikke eventuelle adgangskoder eller personlige oplysninger, tegnebogens data gemmes kun i krypteret form. Blockchain.info kører på privatejet dedikeret hardware, som kun kan tilgås af administrator. Vi udfører regelmæssige sikkerhedsvurderinger af både vores kode og servere inklusive scanning af vores websted ved hjælp af nmap for at opdage mulige sårbarheder tidligt. Sitet kan tilgås sikkert ved hjælp af https:\/\/ verificeret af GoDaddy.",
+         "about_p1":"Blockchain.info er Bitcoins mest populære Bitcoin tegnebog og blok explorer. Pr. oktober 2012 modtager webstedet over 10.000 besøgende dagligt og har over 30.000 brugere.",
+         "response_time":"Svartid",
+         "availability":" Vi tilstræber 99,5% oppetid men denne tjeneste er drives på en best effort basis. Hvis vedligeholdelse er planlagt, vil vi underrette brugerne via e-mail.",
+         "privacy_p1":"Vi registrerer adgangslogfiler af alle sider på sitet for analyseformål. Adgangslogfiler beskæres hver 7. dag. Vi logger ingen data om oplysninger om transaktioner foretaget via min tegnebog eller Bitcoin adresser brugt i min tegnebog. Enhver e-mail-adresse, Skype-navn eller andre personlige data oplyst til os vil ikke blive delt med nogen tredjepart eller annoncører."
+      },
+      "double_spends":{
+         "sub_header":"Dobbeltbetalinger opdaget i de sidste 500.000 transaktioner (10 minutter Cache)",
+         "orphaned":"Forkastede",
+         "warning":"Dobbeltbetalinger på denne side kan være utilsigtede. Hvis en ondsindet produceret dobbeltbetaling er opført på denne side, er det ikke tegn på at det var en succes, eller at en forhandler eller bruger tabte penge som følge heraf.",
+         "header":"Dobbeltbetalinger",
+         "title":"Bitcoin Dobbeltbetalinger - Blockchain.info"
+      },
+      "api_index":{
+         "json_rpc":"Bitcoin-Qt kompatibel JSON RPC",
+         "receive_payments":"Modtag betalinger",
+         "requests_in_8_hours":"Anmodninger i løbet af 8 timer:",
+         "no_account_required":"Ingen konto kræves",
+         "title":"Bitcoin Udvikler API - Blockchain.info",
+         "bitpay_description":"Blockchain anbefaler stærkt Bitpay - The World Leader in Bitcoin Business Solutions. Bitpay tilbyder en komplet checkout løsning til bl.a. automatisk konvertering til lokale valutaer og integration med et væld af shopping cart software.",
+         "payment_processing":"Betalingshåndteringe.",
+         "simple_query_api":"Simpel forespørgsel API",
+         "request_limits":"Søgebegrænsninger",
+         "request_limits_p1":"eller en API-kode til at omgå søgebegrænsningerne, tak.",
+         "account_required":"Min Tegnebog konto kræves",
+         "simple_query_api_description":"Simple klartekst API til at søge i blokkædens data. Kompatibel med",
+         "complete_merchant_solution":"Komplet handelsløsning.",
+         "charts_and_statistics_description":"JSON feed, der indeholder data fra hitlisterne og statistik sider.",
+         "exchange_rates_data":"Valuta data fra de større Bitcoin børser.",
+         "receive_payments_description":"En utrolig nem metode til at lade websteder modtage Bitcoin betalinger.",
+         "data_api_description":"Fremsøg JSON data om blokke og transaktioner. Næsten alle de data, du ser på denne hjemmeside er tilgængelig i JSON format.",
+         "sub_header":"Værktøjer for udviklere til at få data om blokkæden",
+         "third_party_apis":"Tredieparts API'er",
+         "requests_in_5_minutes":"Anmodninger i løbet af 5 minutter:",
+         "send_description":"Simpelt JSON api brugt til maskinelt at sende og modtage bitcoins fra en My Wallet-konto.",
+         "meta_description":"Blockchain tilbyder gratis API for Bitcoin handlende og udviklere.",
+         "send_payments":"Send betalinger",
+         "websocket_description":"Lav latency streaming socket kanal med data om nye blokke og transaktioner. Abonner på notifikation om blokke, transaktioner eller en adresse og modtage JSON objekter, der beskriver en transaktion eller blok, når en begivenhed indtræffer.",
+         "header":"Bitcoin Udvikler API",
+         "welcome_p1":"Her finder du alt du behøver for at komme i gang med at programmere for Bitcoin. Du kan bruge Blockchain.info's egen API - eller",
+         "up_time_description":"Blockchain.info bruge en klynge af databaser med høj tilgængelighed og dedikeret hardware for maksimal oppetid og lave svartider.",
+         "json_rpc_description":"Blockchain.info er i stand til at fungere som en bitcoind RPC-server hvormed handlende kan interagere med deres My Wallet-konto."
+      },
+      "block":{
+         "meta_description":"Transaktioner indeholdt i Bitcoin blok",
+         "no_block_index":"Intet blok indeks opgivet",
+         "summary_table":{
+            "bits":"Bits",
+            "orphaned":"Forkastede",
+            "block_reward":"Blok belønning",
+            "received_time":"Tidspunkt modtaget",
+            "output_title":"Output Titel",
+            "estimated_transaction_volume":"Anslået Transaktionsvolume",
+            "nonce":"Nonce",
+            "timestamp":"Tidspunkt"
+         },
+         "hash_table":{
+            "previous_block":"Forrige blok",
+            "next_block":"Næste blok(ke)"
+         },
+         "header":"Blok",
+         "network_propagation":"Netværksudbredelse",
+         "title":"Bitcoin Blok Nr. {0}"
+      },
+      "wallet_index":{
+         "p1":"My Waller er en gratis online Bitcoin tegnebog, som du kan bruge til at lave internationale, anonyme betalinger gratis. Vi gør betalinger med bitcoins nemt og sikkert tilgængeligt overalt på din telefon eller computer.",
+         "slides":{
+            "payment_notifications_skype":"Bitcoin Betalingsmeddelselser Skype",
+            "mobile_support_p2":"Hvis din telefon bliver tabt eller stjålet vil din tegnebog stadig være sikkert gemt på vores servere.",
+            "double_encryption_p1":"Før din Bitcoin tegnebog er gemt på vores servere er den AES 256-bit krypteret i din browser. Din adgangskode bliver aldrig delt med os så ikke engang vi kan åbne din tegnebog. Desuden kan din tegnebog eventuelt krypteres igen med en anden adgangskode, så der kræves én adgangskode for at logge ind, og en separat adgangskode for at foretage transaktioner. Hvis det ikke er nok, understøtter vi også en række to-faktor-autentificering metoder, herunder Mt.Gox Yubikeys.",
+            "mobile_support":"Understøttelse af mobile enheder",
+            "charts_analytics_img_title":"Indbyggede Diagrammer og Dataanalyse",
+            "one_click_backups_p1":"Vi gør alt for at holde din tegnebog sikkerhedskopieret. Men der er ingen erstatning for at have en backup på din egen PC. Ved et tryk på en knap kan du få din krypterede tegnebog e-mailet til dig selv, gemt på din dropbox-konto eller gemt lokalt. Så selv hvis blockchain.info lider tab af data eller går offline kan du stadig få adgang til dine midler.",
+            "payment_notifications":"Betalingsmeddelelser",
+            "double_encryption":"Dobbelt Kryptering",
+            "charts_analytics":"Diagrammer og Dataanalyse",
+            "one_click_backups":"Et-klik Backup",
+            "payment_notifications_gtalk":"Betalingsmeddelelser Google Talk",
+            "payment_notifications_p1":"Modtag meddelelser, når en betaling er sendt eller modtaget fra din Bitcoin tegnebog. Den gennemsnitlige forsinkelse for betalingsmeddelelser er mindre end 50 ms. Hvis du modtager en betaling mens du er logget ind i My Wallet vil en lyd spille og grænsefladen vil øjeblikkeligt opdatere uden at behøve at hente siden igen."
+         },
+         "introduction_video":"Bitcoin Introdution View",
+         "successfully_transacted":"Gennemført med succes.",
+         "control":{
+            "p1":"Det smukke i Bitcoin er, at det er fuldt decentraliseret, ingen regering eller selskabs kan blokere betalinger eller tilbageholde konti.",
+            "p2":"Med min tegnebog bevarer du fuld kontrol over din",
+            "p4":"hvilket betyder at dine tegnebøger aldrig kan beslaglægges eller blokeres, og kan importeres til enhver Bitcoin klient.",
+            "title":"Bevar kontrollen"
+         },
+         "title":"Bitcoin Tegnebog",
+         "easy":{
+            "p2":"eller netbank. Efter login vil du blive præsenteret for din saldo og en liste over dine seneste transaktioner"
+         },
+         "confused":{
+            "p1":"Forvirret? Læs",
+            "p2":"Begynder-FAQ"
+         },
+         "meta_description":"My Wallet er et gratis online Bitcoin tegnebog, som du kan bruge til at lave internationale, anonyme betalinger gratis. Vi gør betaling med bitcoins nemt og sikkert.",
+         "features":{
+            "live_update":"Levende opdateret grænseflade",
+            "p1":"Den mest avancerede online Bitcoin tegnebog til rådighed.",
+            "client_side_encryption":"Sikker Client-Side Kryptering",
+            "payment_notifications":"SMS og e-mail betalingsmeddelelser",
+            "title":"Rig på features",
+            "import_export":"Import \/ Eksport af private nøgler.",
+            "two_factor":"To-faktor Autentifikation",
+            "backups":"Kan lave dine egne sikkerhedskopier."
+         },
+         "security":{
+            "p2":"kryptering til at beskytte din tegnebog fra tyve og hackere. Det smarte er, at krypteringen er sker fuldstændig i din browser, før tegnebogen gemmes på vores servere, så ikke engang vi har adgang til din konto!",
+            "p3":"Min tegnebog bygger på sikkerheden i Bitcoin ved at give et væld af funktioner, der hjælper dig med at holde dine penge sikre, herunder",
+            "remote_backups":"Remote Backups"
+         },
+         "anonymous":{
+            "p1":"Det eneste, vi kræver for en konto er en adgangskode, ingen andre personligt identificerbare oplysninger er nødvendige. Vi kan ikke se dine offentlige nøgler, se dine transaktioner eller kontrollere kontoens saldo.",
+            "p2":"Min tegnebog indeholder også en indbygget",
+            "p3":"der garanterer 100% anonyme transaktioner.",
+            "mixing_service":"blandingstjeneste",
+            "title":"Anonym"
+         },
+         "merchants":{
+            "p1":"1000-vis af handlende accepterer allerede Bitcoin på verdensplan, og der kommer nye hver dag. Alt fra Online Poker til økologisk kaffe, hvis du kan nævne det, kan du købe det med bitcoins.",
+            "title":"Handlende over hele verden"
+         },
+         "tooltips":{
+            "paper_wallet_title":"Papirtegnebog",
+            "private_key":"Bitcoin adresser består af to dele. Den private nøgle er den del, som anvendes til at bevise ejerskabet af en adresse og er nødvendig for at bruge pengene. Den skal holdes hemmeligt på alle tidspunkter.",
+            "remote_backup":"Remote backup er, når din tegnebog er gemt i separat andetsteds end din lokale pc. Det er vigtigt for at sikre dine penge ikke går tabt i tilfælde af en harddiskfejl eller anden computerfejl",
+            "offline_transactions":"Offline transaktioner er Bitcoin transaktioner, som genereres uden en aktiv internetforbindelse. De betragtes som mere sikkere, da din pc er isoleret fra internettet.",
+            "paypal":"PayPal er en forældet betalingsudbyder",
+            "aes":"En ekstremt stærk kryptering standard vedtaget af den amerikanske regering, som nu i vid udstrækning på verdensplan bruges til VPN og andre krypterede kommunikationsformer",
+            "remote_backup_title":"Remote Backups"
+         }
+      },
+      "misc":{
+         "disclaimer":"Enhver brug af udtrykket penge på denne hjemmeside refererer til virtuel valuta alene. Viste børskurser er leveret af 3. parter, og er ikke en indikation af, at Bitcoin bliver bakket op af nogen vare eller anden valuta."
+      },
+      "error_page":{
+         "error_404":"Siden blev ikke fundet, kontroller at du har indtastet adressen korrekt."
+      },
+      "wallet":{
+         "my_wallet":"My Wallet",
+         "slogan":"Vær din egen bank",
+         "existing_users_p1":"Hvis du tidligere har oprettet en My Wallet-konto skal du klikke nedenfor for at logge ind."
+      },
+      "address":{
+         "deposit_with_cash":"Indbetaling med kontanter",
+         "request_payment":"Anmod om betaling",
+         "confirmed_only":"Kun bekræftet",
+         "no_transactions":"Ingen transaktioner fundet for denne adresse, den er sandsynligvis ikke blevet brugt på netværket endnu.",
+         "table_summary":{
+            "taint_analysis":"Taint Analyse"
+         },
+         "escrow":"Deponering",
+         "invalid_hash_160":"Beklager, dette er ikke en gyldig hash 160",
+         "double_spend_warning":"Advarsel! denne Bitcoin adresse indeholder transaktioner, som måske er dobbeltbetalinger. Du bør være meget forsigtig med at stole på transaktioner til \/ fra denne adresse.",
+         "table_transactions":{
+            "number_of_transactions":"Antal transaktioner"
+         },
+         "too_large_to_filter":"Denne adresses regnskabsbog er for stor til at filtrere"
+      },
+      "blocks":{
+         "blocks_found_by":"Nye blokke fundet af {0}",
+         "orphaned":"Forladte",
+         "title1":"Nye blokke fundet af {0}",
+         "title2":"Blokke løst på",
+         "mined_on":"Blokke løst på:"
+      },
+      "startup_message":{
+         "p1":"Bør være tilbage om et par sekunder. Der kunne endda være nye funktioner.",
+         "title":"Website Indlæser - Blockchain.info"
+      },
+      "relayed_by":{
+         "associated_ips":"Tilknyttede IP-adresser",
+         "count":"Antal",
+         "warning":"Disse IP-adresser var de første var de første til at videresende en transaktion, som involverer den valgte adresse. Det betyder ikke nødvendigvis, at de er transaktionens ejer.",
+         "title":"IP-adresser tilknyttet adresse"
+      },
+      "home":{
+         "other_links":{
+            "nodes2":"En log over alle Bitcoin noder blockchain.info er tilsluttet",
+            "largest":"Største transaktioner",
+            "orphaned2":"Gyldige blokke som ikke er en del af den primære Bitcoin kæde",
+            "rejected":"Afviste",
+            "double_spends2":"Dobbeltbetalinger detekteret blandt de sidste 500.000 transaktioner",
+            "largest2":"Største 100 transaktioner blandt de sidste 50.000 transaktioner",
+            "pools":"Mining Pool statistik",
+            "orphaned":"Forkastede blokke",
+            "wallet2":"Administrer dine penge med Bitcoins mest avancerede web tegnebog.",
+            "hub_nodes2":"En liste over de bedst forbundne Bitcoin superknudepunkter",
+            "strange":"Sære Transaktioner",
+            "nodes":"Bitcoin knudepunkter",
+            "globe":"Bitcoin globus",
+            "pools2":"Cirkeldiagram som viser markedsandelen for de bedste Bitcoin mining pools",
+            "double_spends":"Dobbeltbetalinger",
+            "header":"Andre Bitcoin links",
+            "strange2":"Transaktioner, hvor vi var ude af stand til at afkode output adresse",
+            "notifications":"Betalingsnotificering"
+         },
+         "sub_header":"Senest genererede blokke i Bitcoin blokkæden",
+         "search_explain":"Du kan indtaste en blok højde, adresse, blok hash, transaktionshash, hash160 eller IPv4-adresse ..",
+         "about":{
+            "p1":"Bitcoin er en peer-to-peer valuta. Peer-to-peer betyder, at ingen centrale myndighed udsteder nye penge eller sporer transaktioner. Disse opgaver varetages kollektivt af netværket.",
+            "p2":"Denne hjemmeside giver dig mulighed for at navigere i Bitcoin blokkæden (en database, der indeholder oplysninger om alle transaktioner). Vi har også Bitcoins største og mest sikre tegnebog service."
+         }
+      },
+      "push_tx":{
+         "p1":"Denne side giver dig mulighed for indsætte en rå transaktion i hex (dvs. tegn 0-9, a-f) dens gyldighed vil så blive kontrolleret, og den udsendes over netværket.",
+         "submit":"Send Transaction",
+         "header":"Udsend transaktion",
+         "title":"Udsend Transaktion - Blockchain.info"
+      },
+      "ip_log":{
+         "sub_header":"Liste over Bitcoin knudepunkter blockchain.info har været tilsluttet på et tidspunkt.",
+         "meta_description":"En liste over alle ip-adresser, der har været tilsluttet Bitcoin netværket.",
+         "header":"Bitcoin knudepunkts-log",
+         "title":"Bitcoin knudepunkts-log"
+      },
+      "tx_tree":{
+         "meta_description":"Et træ-graf, der viser outputs fra Bitcoin transaktion {0}",
+         "no_clustering":"Ingen samling",
+         "output_unspent":"Output er ubrugt, og har ingen næste led.",
+         "output_spent":"Output bliver brugt - Klik for at se næste led.",
+         "cluster_by_address":"Saml efter adresse",
+         "header":"Transaktionsvisualisering",
+         "title":"Visualiser Transaktion {0} - Blockchain.info"
+      },
+      "ads":{
+         "bitinstant":{
+            "body":"Køb kontant",
+            "title":"Behov for Bitcoins?"
+         }
+      },
+      "strange_transactions":{
+         "sub_header":"Transaktioner, der indeholder udgange, hvor vi var ude af stand til at afkode en Bitcoin adresse.",
+         "header":"Sære Transaktioner",
+         "title":"Sære Transaktioner - Blockchain.info"
+      },
+      "propagation":{
+         "first_seen":"Først set",
+         "mining_pools":"Mining Pools",
+         "h3":"Inventory Hash: {0}",
+         "title":"Bitcoin netværksudbredelse - Blockchain.info",
+         "sub_header":"Viser fordelingen af en transaktion eller blok i hele netværket",
+         "nodes_connected":"Tilsluttede knudepunkter",
+         "first_relayed":"Først videresendt",
+         "header":"Netværksudbredelse",
+         "node_list":"Knudepunktsliste",
+         "probable_owner":"Sandsynlig ejer",
+         "total_relayed":"Videresendt i alt",
+         "node_list_sub":"Alle knudepunkter der har videresendt dette element",
+         "network_percent":"Procent af netværket"
+      },
+      "header":{
+         "charts_title":"Bitcoin Diagrammer",
+         "developer_title":"Blockchain Udvikler Værktøj",
+         "wallet_title":"Bitcoin Tegnebog"
+      },
+      "maintenance":{
+         "p1":"Blockchain.info er i øjeblikket lukket for vedligeholdelse. For statusopdateringer se {0}. Undskyld ulejligheden.",
+         "header":"Vi Er Snart Tilbage"
+      },
+      "transaction":{
+         "input_decode_error":"Kunne ikke afkode input adresse",
+         "unconfirmed_transaction":"Ubekræftet transaktion!",
+         "escrow":"Deponering",
+         "double_spend":"Dobbeltbetaling!",
+         "no_inputs":"Ingen inputs (nyligt genererede Mønter)"
+      },
+      "errors":{
+         "invalid_bitcoin_adddress":"Ugyldig Bitcoin Adresse",
+         "block_not_found":"Blok ikke fundet",
+         "invalid_block_hash":"Ugyldig Blok Hash"
+      },
+      "notifications":{
+         "notifications_limit":"Grænse for betalingsmeddelelser",
+         "two_factor_reset_title":"To-faktor Autentifikation Reset",
+         "notifications_limit_body":"Du har nået dit grænse for meddelelser. Meddelelser er blevet deaktiveret i 24 timer",
+         "sms_authentication_code":"My Wallet autentifikationskode: {0}"
+      },
+      "orphaned_blocks":{
+         "meta_description":"Forkastede blokke er gyldige blokke, der ikke er en del af Bitcoins hovedblokkæde.",
+         "p1":"Forkastede blokke er rent teknisk gyldige blokke, men de er ikke en del af hovedkæden og derfor værdiløse. De kan forekomme naturligt, når to eller flere miners genererer gyldige blokke af samme højde. Men forkastede blokke kan også være forårsaget af at en angriber (med nok hashing kraft) forsøger at annullere transaktioner.",
+         "number_of_transactions":"Antal transaktioner",
+         "header":"Forkastede Blokke",
+         "title":"Forkastede Blokke - Blockchain.info",
+         "timestamp":"Tidspunkt"
+      },
+      "ip_info":{
+         "sub_header":"Transaktioner, der blev transmitteret først af IP-adressen {0}",
+         "meta_description":"Bitcoin transaktioner videreformidlet af IP-adressen {0}"
+      }
+   },
+   "name":"Danish",
+   "properties":{
+      "extends":"auto_danish"
+   }
 }

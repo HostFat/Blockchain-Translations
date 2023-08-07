@@ -1,13 +1,874 @@
 {
-	"name":"French",
-	"code":"fr",
-	"flag":"fr.png",
-
-	"properties":{
-		"extends": "auto_french"
-	}
-
-	"strings" : {
-
-	}
+   "flag":"fr.png",
+   "code":"fr",
+   "strings":{
+      "unconfirmed":{
+         "sub_header":"Liste des nouvelles transactions Bitcoin mise à jour en direct",
+         "connected":"Connecté",
+         "meta_description":"Une liste des transactions Bitcoin non confirmées",
+         "disconnected":"Déconnecté :",
+         "total_fees":"Total des taxes"
+      },
+      "wallet_new":{
+         "password_strength_p1":"Nous avons besoin d'un mot de passe d'au moins 10 caractères pour nous assurer que même si notre base de données est compromise, votre portefeuille restera sécurisé. Un mot de passe de 10 caractères mettera plus de 1000 ans pour être cracké.",
+         "dont_forget_password_p1":"Comme votre mot de passe n'est pas partagé avec nous, il est extrêmement important de vous en rappeler, et si nécessaire de l'écrire sur un Post-It dès maintenant. Il n'existe pas de processus de récupération du mot de passe !",
+         "wallet_created":"Nouveau portefeuille créé !",
+         "anonymity_policy":"Politique d'anonymat",
+         "password_strength":"Difficulté du mot de passe",
+         "confirm_password":"Confirmer le mot de passe:",
+         "wallet_created_p1":"Votre portefeuille en ligne a été créé avec succès. Il est important de garder à la fois votre identifiant et le mot de passe en toute sécurité. Nous pouvons vous aider à récupérer les identifiants portefeuille perdus si seulement vous nous fournissez une adresse e-mail valide. Nous sommes incapables de vous aider à récupérer les mots de passe perdus !",
+         "sub_header1":"Choisissez simplement un mot de passe sécurisé et appuyez sur continuer.",
+         "alias_sub":"Vous pouvez choisir un alias pour votre portefeuille qui vous permettera de vous connecter avec plutôt que d'utiliser un identifiant.",
+         "email_sub":"Si vous souhaitez que nous vous envoyons un lien pour accéder à votre nouveau portefeuille, entrez votre adresse e-mail ci-dessous.",
+         "proceed_to_login":"Procéder à la connexion",
+         "please_read":"Veuillez lire notre {0} et {1}",
+         "disclaimer":"Déclaration de non-responsabilité",
+         "email":"E-mail"
+      },
+      "wallet_app":{
+         "nav":{
+            "home":"Accueil portefeuille"
+         },
+         "transactions":{
+            "no_transactions":"Normalement vos transactions Bitcoin seraient énumérées ici, mais vous n'en avez fait aucune pour l'instant.",
+            "escrow":"Dépôt fiduciaire"
+         },
+         "title":"My Wallet",
+         "import_export":{
+            "import_backup":"Importer une sauvegarde",
+            "export_encrypted":"Exporter de manière chiffrée",
+            "export_unencrypted":"Exportation de manière non chiffrée",
+            "advanced_warning_sub":"Cette section vous permet de faire des changements à votre portefeuille qui peuvent être compliqués et confus. Il est recommandé d'être un utilisateur avancé de Bitcoin avant de procéder. Vous devriez comprendre ce que les clés privées sont et leur rapport aux adresses Bitcoin.",
+            "desktop_sync":"Synchro du bureau",
+            "paper_wallet":"Portefeuille sur papier",
+            "advanced_warning_title":"Attention, niveau avancé requis !"
+         },
+         "login":{
+            "yubikey_help":"Sélectionnez la zone de texte ci-dessus et appuyez sur la lumière LED verte de votre Yubikey.",
+            "email_code":"Code e-mail :",
+            "support_pages":"pages de support",
+            "identifier":"Identifiant :",
+            "lost_two_factor_title":"Détails de l'identification à deux facteurs oubliés.",
+            "two_factor_reset":"réinitialisation de l'identification à deux facteurs",
+            "resend_link_p1":"L'e-mail sera envoyé à partir de wallet@blockchain.info. Assurez-vous de vérifier votre dossier spam. Si vous ne trouvez toujours pas l'e-mail, cliquez sur le bouton ci-dessous pour le renvoyer.",
+            "sms_code":"Code SMS :",
+            "sms_code_help":"Un SMS a été envoyé sur votre téléphone portable. Veuillez entrer le code dans ce message ci-dessus.",
+            "lost_password":"Mot de passe oublié",
+            "need_help_p1":"Lisez nos {0}",
+            "lost_two_factor":"Perdu ou oublié vos détails de l'identification à deux facteurs ?",
+            "lost_two_factor_btn":"Réinitialiser l'identification à deux facteurs",
+            "password_hints_btn":"Indices pour le mot de passe",
+            "lost_password_p1":"Votre portefeuille est chiffré par votre navigateur avant qu'il ne nous arrive et pour cette raison nous ne pouvons pas vous aider à récupérer les mots de passe perdus. Pour éviter toute perte monétaire possible à cause de mots de passe oubliés, il est recommandé d'effectuer une sauvegarde papier des clés privées de votre porte-monnaie.",
+            "lost_two_factor_p1":"Si vous avez perdu vos détails de l'identification à deux facteurs, votre portefeuille est toujours récuperable. Tout ce dont nous avons besoin est une preuve raisonnable que vous êtes le titulaire du compte qui peut être fournie en remplissant le formulaire lié ci-dessous",
+            "forgotten_identifier_btn":"Identifiant oublié",
+            "forgotten_something_sub":"Au secours ! J'ai verouillé mon compte et je ne peux plus y accéder",
+            "open_wallet":"Ouvrir portefeuille",
+            "please_enter_login_details":"Veuillez entrer vos informations de connexion ci-dessous :",
+            "google_authenticator_help":"Veuillez ouvrir votre application Google Authenticator et entrer le code affiché.",
+            "resend_link_title":"Vous ne trouvez pas votre code reçu par e-mail ?",
+            "lost_identifier_title":"Alias ou identifiant oublié",
+            "password_unrecoverable_warning":"Votre mot de passe n'est jamais partagé avec nos serveurs et ne peut être récupéré en cas d'oubli !"
+         },
+         "account_settings":{
+            "example_password":"Si le mot de passe de votre portefeuille était ChevalBatterie, un bon indice serait : cheval électrique",
+            "my_wallet_verifier":"My Wallet Verifier",
+            "two_factor_authentication_description":"L'identification à deux facteurs ajoute une couche de sécurité supplémentaire en plus de votre mot de passe.",
+            "multiple_ip_comma_seperated":"Chaque adresse IP doit être séparée par une virgule.",
+            "google_authenticator_warning":"Vous pouvez être bloqué hors de votre compte si vous quittez cette page sans synchroniser avec l'application mobile ou désactiver Google Authenticator.",
+            "yubikey_description":"Pour synchroniser votre clé à votre compte, sélectionnez la zone de texte ci-dessous et appuyez sur le bouton vert LED de votre appareil Yubikey.",
+            "local_currency":"Monnaie locale",
+            "disable_double_encryption":"Désactiver le double-chiffrement",
+            "fee_policy_low_description":"Aucun frais de minage ne sera inclus sauf si c'est absolument essentiel.",
+            "second_password":"Second mot de passe",
+            "notifications_when_both":"Envoyer ou recevoir des Bitcoins",
+            "nav":{
+               "passwords":"Mots de passe",
+               "header":"Informations du compte"
+            },
+            "device_pairing_description":"Scannez le code ci-dessous avec votre iPhone ou votre Android pour le synchroniser avec votre compte.",
+            "sms_verification_placeholder":"Code de vérification par SMS",
+            "restrict_to_ip_description":"Activez cette option pour limiter l'accès à votre portefeuille à une adresse IP spécifique ou plusieurs adresses IP séparées par des virgules. N'activez cette option uniquement si vous avez une adresse IP statique. Vous ne serez pas capable de vous connecter ou d'accéder à toute l'API depuis un ordinateur qui ne serait pas sur le réseau spécifié, mais les applications mobiles vont continuer à fonctionner une fois synchronisées.",
+            "secret_phrase_description":"Une phrase secrète peut être utilisée pour nous aider à vérifier votre identité en cas de perte de l'identifiant de votre portefeuille ou de votre Yubikey. Ça peut être un seul mot ou une phrase jusqu'à 255 caractères de long.",
+            "integrity_check":"Vérification d'intégrité",
+            "second_password_hint":"Indice du second mot de passe :",
+            "never_remember_two_factor_description":"Par défaut, après une connexion avec identification à deux facteurs, votre navigateur sera reconnu pendant une courte période de temps, ce qui vous permettera de vous connecter à nouveau sans avoir à ré-identifier. Cochez cette case si vous souhaitez désactiver ce comportement et ainsi avoir une identification complète à chaque fois.",
+            "two_factor_authentication_not_enabled":"L'identification à deux facteurs n'est pas activée sur votre compte",
+            "current_ip":"IP actuelle :",
+            "receives":"Recevoir des Bitcoins",
+            "automatic_email_backups":"Sauvegardes automatiques par e-mail",
+            "automatic_email_backups_description":"Cochez cette case pour recevoir une nouvelle sauvegarde automatiquement lorsque votre porte-monnaie se met à jour :",
+            "fee_policy_description":"Les transactions de Blockchain.info sont gratuites. Toutefois, le réseau bitcoin peut exiger un supplément mineur qui affectera la vitesse à laquelle vos transactions seront vérifiées, et contribuera à soutenir le réseau. Modifiez les paramètres ci-dessous pour modifier la politique des frais de mineurs par défaut.",
+            "send_sms_code":"Envoyer un code par SMS",
+            "notifications_when":"Lorsque mon portefeuille",
+            "double_encryption_enabled":"Le double chiffrement est activé. Un second mot de passe sera nécessaire avant de pouvoir envoyer des fonds.",
+            "confirm_password":"Confirmer le mot de passe:",
+            "second_password_description":"Vous pouvez également définir un deuxième mot de passe qui sera demandé lors de l'envoi de fonds à votre compte. Pour les portefeuilles de haute capacité, votre navigateur peut cesser de répondre pendant quelques minutes lors de la modification de cette option.",
+            "never_remember_two_factor":"Ne jamais se souvenir de l'identification à deux facteurs",
+            "password_hints_description":" Si vous avez oublié votre mot de passe, un ou plusieurs indices peuvent être utiles pour vous aider à rafraîchir votre mémoire. S'il y a une adresse e-mail associée à votre compte, ces indices peuvent vous être envoyés par email. Si aucun e-mail est associé à votre compte, ces indices sont disponibles pour quiconque connait l'identifiant de votre portefeuille.",
+            "fee_policy_normal_description":"Suivez la politique de tarification proposée par le principal client bitcoin.",
+            "mobile_number_description":"Entrez votre numéro de téléphone ci-dessous. L'envoi de SMS à l'international peut parfois être peu fiable et ne pas être disponible dans certains pays ou réseaux.",
+            "boxcar_description_p1":"Veuillez entrer votre",
+            "enable_double_encryption":"Activer le double chiffrement",
+            "email_not_verified":"E-mail non vérifié",
+            "google_authenticator_description":"Ouvrez l'application Google Authenticator et scannez le QR code ci-dessous pour compléter le processus de synchronisation.",
+            "alias_placeholder":"Mot mémorable ou pseudo",
+            "integrity_check_description":"Vérifie que toutes les clés dans votre portefeuille correspondent à la bonne adresse bitcoin et re-chiffre votre porte-monnaie. Cela peut prendre un certain temps avec certains navigateurs.",
+            "notifications_description":"Recevoir optionellement des notifications quand un paiement est envoyé ou reçu par votre porte-monnaie.",
+            "update_main_password":"Mise à jour du mot de passe principal",
+            "alias_description":"Un alias est un lien court qui peut être mémorisé pour un accès rapide à votre compte sans avoir à vous souvenir d'un identifiant",
+            "email_verified":"E-mail vérifié",
+            "my_wallet_verifier_description":"Si vous êtes préoccupé par la sécurité, nous vous recommandons fortement d'installer l'extension navigateur {0}. Le vérificateur My Wallet peut aider à protéger contre le piratage côté serveur, les JavaScript malveillants et les tentatives de phishing.",
+            "forgot_password_warning_p2":"Chaque mot de passe oublié rendra votre portefeuille non-accessible. Il n'existe pas de processus de récupération de mot de passe !",
+            "password_hints":"Indices pour le mot de passe",
+            "restrict_to_ip":"Restreindre l'IP",
+            "main_password_hint":"Indice mot de passe principal :",
+            "email_notifications_description":"Vous recevrez des notifications par e-mail. Veuillez confirmer votre adresse e-mail si vous n'en avez pas déjà une.",
+            "fee_policy_high_description":"Les frais seront établis pour assurer que les transactions seront de haute priorité (0,001 frais de base BTC).",
+            "sends":"Envoyer des Bitcoins",
+            "enter_sms_code":"Entrez le code de vérification contenu dans le SMS.",
+            "sub_header":"Modifier les paramètres de votre compte My Wallet.",
+            "fee_policy_low_warning":"Les transactions seront confirmées nettement plus lentement",
+            "email_description":"L'identification à deux facteurs par e-mail est activée sur votre compte. Un e-mail sera envoyé à {0} contenant un code de confirmation qui devra être fourni lors de la connexion.",
+            "lock_to_ip":"Verrouillage par IP :"
+         },
+         "modals":{
+            "delete_private_key_only":"Supprimer uniquement la clé privée",
+            "label_help":"Un label vous permet de vous rappeler quel est le but de cette adresse. Il peut s'agir du nom d'une personne ou d'une société.",
+            "update_password":"Mise à jour du mot de passe",
+            "verify_message_placeholder":"Entrez le message à vérifier",
+            "scan_using_webcam":"Numérisation à partir d'une webcam",
+            "label_address":"Label de l'adresse",
+            "please_check_details":"Veuillez vérifier les détails ci-dessous :",
+            "sweep_keys_p1":"Balayer consiste à déplacer tous les fonds disponibles depuis une ou plusieurs adresses vers une autre adresse. Veuillez choisir une adresse où vous souhaiteriez balayer les adresses sélectionnées (Balance {0}).",
+            "continue_without":"Continuer sans",
+            "delete_both":"Supprimer l'adresse ainsi que la clé privée",
+            "claim_p1":"Veuillez choisir l'une des options ci-dessous pour réclamer vos bitcoins. Jusqu'à ce que ce soit revendiqué, l'expéditeur est capable d'annuler ce paiement.",
+            "transaction_information":"Renseignements sur la transaction",
+            "password_change_p1":"Votre mot de passe sera immédiatement mis à jour. Soyez sûr de noter votre nouveau mot de passe car il ne pourra pas être récupéré en cas d'oubli ! Si vous avez des sauvegardes chiffrées de votre portefeuille, il sera possible de les déchiffrer en utilisant votre ancien mot de passe ; il est recommandé de supprimer toutes ces sauvegardes.",
+            "label_address_p1":"Veuillez entrer un label pour l'adresse {0}",
+            "watch_only":"lecture-seule",
+            "add_address_book_entry":"Ajouter une entrée dans le carnet d'adresses",
+            "signing_please_wait":"Veuillez patienter. Signature de l'entrée numéro {0} sur {1} \u2026",
+            "first_relayed":"Relayé en premier",
+            "miners_fee_recommended_p1":"Cette transaction est de faible priorité. Il est recommandé d'inclure au moins 0,0005 BTC de frais de transaction afin de s'assurer que les mineurs la traiteront.",
+            "ask_for_anonymous_warning":"N'acceptez pas si vous vous attendez à recevoir un paiement en retour à l'adresse d'envoi. Les transactions anonymes sont incompatibles avec SatoshiDICE, BitLotto et de nombreux autres jeux Bitcoin",
+            "send_via_email_h3":"Envoyer {0} BTC à {1}",
+            "please_confirm":"Veuillez confirmer que vous souhaitez : {0}",
+            "watch_only_warning_p2":"Une adresse {0} signifie que vous pouvez seulement observer les opérations à cette adresse. À moins que vous ne possédiez la clé privée quelque part ailleurs, les fonds de celle-ci ne vous appartiennent pas.",
+            "watch_only_warning_p3":"Si vous n'avez pas de paper wallet ou d'autre sauvegarde, vous ne devriez pas retirer d'argent à cette adresse ou demander à quelqu'un de vous envoyer de l'argent sur celle-ci",
+            "total_fees":"Frais totaux",
+            "address_qr_code":"Adresse QR Code",
+            "verify_message":"Vérification du message",
+            "watch_only_warning_p1":"Cet avertissement apparaît car vous avez copié une adresse {0} dans le presse-papiers.",
+            "forward_to_client":"Transmettre au Desktop Client",
+            "claim_to_desktop":"Entrez l'adresse bitcoin de votre Desktop Client :",
+            "message_placeholder":"Entrez le message que vous souhaitez signer",
+            "confirm_delete_warning":"La suppression d'une mauvaise adresse peut entraîner des pertes financières. Si vous n'êtes pas sûr de ce que vous faites, annulez l'opération",
+            "verify_message_p1":"Utilisez cet outil pour vérifier un message signé par le propriétaire d'une adresse bitcoin particulière",
+            "second_password_p1":"Cette action nécessite que vous entriez votre second mot de passe : il est nécessaire pour pleinement déchiffrer votre porte-monnaie. Ne jamais entrer votre second mot de passe sur un ordinateur non sécurisé. Utilisez le clavier virtuel pour avoir une certaine protection contre les keyloggers.",
+            "second_password_needed":"Le second mot de passe est requis",
+            "address_not_synced_p1":"Cette adresse n'a pas encore été sauvegardée sur nos serveurs et peut être perdue si vous quittez cette page.",
+            "confirm_delete_p1":"Êtes-vous sûr de vouloir supprimer cette adresse ? Vous ne serez plus en mesure d'envoyer ou de recevoir de bitcoins à cette adresse. Le solde de celle-ci est de :",
+            "send_transaction":"Envoyer la transaction",
+            "total_output_value":"Valeur totale de sortie",
+            "offline_instructions":"Pour compléter la transaction, ouvrir {0}. Copiez et collez le texte ci-dessous dans la zone de texte et appuyez sur Soumettre pour compléter la transaction. <\/ P>",
+            "address_book_label_help":"Entrez le label pour cette adresse. Par exemple le nom de la personne ou de la société.",
+            "total_relayed":"Total relayé",
+            "hash":"Hash",
+            "add_address_book_entry_placeholder":"Entrez l'adresse Bitcoin que vous souhaitez ajouter à votre carnet d'adresses.",
+            "add_watch_only_address_p3":"Si vous n'êtes pas tout à fait sûr de la différence entre une adresse bitcoin et une clé privée, alors ce n'est pas l'option que vous voulez.",
+            "verify_result":"Ce message a été signé par l'adresse {0}. <br \/> Cela correspond-il à l'adresse que vous attendiez ?",
+            "add_watch_only_address_p1":"Confirmer que vous ajouterez le {0} à l'adresse {1}.",
+            "first_seen":"Vu pour la première fois",
+            "created_offline_p1":"Votre transaction a été créée avec succès mais n'a pas encore été diffusée sur le réseau P2P.",
+            "mining_pools":"Piscines de minage",
+            "save":"Sauvegarder",
+            "compressed_private_key_p1":"Les clés privées compressés ne sont pas actuellement priseq en charge par l'application Android, iPhone ou l'API Merchant. Si vous importez directement une clé privée compressée, vous ne serez pas en mesure de dépenser les fonds à cette adresse en utilisant les periphériques précédemment listés.",
+            "compressed_private_key_p2":"La solution recommandée est de balayer les fonds vers une adresse bitcoin existante. Voulez-vous balayer cette clé privée à la place ?",
+            "compressed_private_key":"Clé privée compressée détectée",
+            "creating_transaction":"Création d'une transaction",
+            "ask_for_anonymous_p1":"Notre mélangeur de bitcoin a besoin de votre argent. Envoyez cette transaction de manière anonyme et obtenez un bonus de {0} % <\/ b> ({1} BTC seront renvoyés à l'adresse d'envoi). La transaction entraînera un retard d'environ {2}.",
+            "add_watch_only_address":"Ajouter une adresse Bitcoin en lecture seule",
+            "password_change":"Confirmer le changement du mot de passe",
+            "label_placeholder":"Label (par exemple Épargnes)",
+            "miners_fee_recommended_warning":"Si vous n'incluez aucun frais, cette opération peut prendre un certain temps à être confirmée. Tous les fonds vous seront retournés dans environ 24 heures.",
+            "add_fee":"Ajouter des frais",
+            "never_ask_again":"Ne jamais me redemander.",
+            "claim_zero_balance":"Le solde de cette adresse bitcoin est égal à zéro. Le paiement a peut-être déjà été demandé ou la transaction a été annulée par l'expéditeur.",
+            "label":"Label :",
+            "login_to_my_wallet":"Se connecter sur mon compte My Wallet",
+            "sign_message_sub":"Utilisez cet outil pour signer un message qui prouve que vous possédez une adresse. Ne signez que des messages détaillés auxquels vous êtes entièrement d'accord, ne jamais signer de message vague. En appuyant sur Signer le message, il se peut que votre navigateur ne réponde plus pendant quelques secondes.",
+            "private_key_needed_p1":"Cette action nécessite la clé privée de l'adresse bitcoin {0}. Veuillez entrer la clé privée ci-dessous.",
+            "watch_only_warning":"Attention : adresse en lecture-seule",
+            "claim_title":"Vous avez reçu des bitcoins !",
+            "ask_for_anonymous":"Envoyer de manière anonyme ?",
+            "network_percent":"% du réseau"
+         },
+         "disconnected":"DÉCONNECTÉ",
+         "wallet_home":{
+            "phone_deposit":"Dépôt par téléphone",
+            "this_is_your_bitcoin_address":"Ceci est votre adresse Bitcoin",
+            "btcpak_withdraw":"Retirer via BTCPak",
+            "pingit_withdraw":"Retirer via PingIt",
+            "backup_description":"La sauvegarde de votre porte-monnaie est une étape importante et facile à oublier. Blockchain.info prend toutes les précautions pour garder votre portefeuille en toute sécurité, mais il est toujours préférable de garder une copie locale juste au cas où.",
+            "withdraw_description":"Utilisez les services ci-dessous pour convertir des bitcoins en votre monnaie locale.",
+            "share_with_anyone":"Partager-la avec n'importe qui afin de recevoir des paiements.",
+            "deposit_description":"Le moyen le plus rapide et le plus facile pour déposer des bitcoins sur votre compte est d'utiliser les services ci-dessous.",
+            "cash_deposit":"Dépôt en espèces"
+         },
+         "success":{
+            "wallet_synced":"Portefeuille synchronisé avec succès avec le serveur",
+            "sms_updated":"Numéro de SMS mis à jour. Message de vérification envoyé.",
+            "auto_backup_enabled":"Sauvegarde automatique par e-mail activée",
+            "email_updated":"E-mail mis à jour",
+            "sms_code_sent":"Code de vérification par SMS envoyé",
+            "updated_ip_lock":"Paramètres de verrouillage IP mis à jour",
+            "saved_to_dropbox":"Portefeuille enregistré avec succès sur Dropbox. Vous pouvez maintenant fermer cette fenêtre",
+            "local_currency_updated":"Monnaie locale mise à jour",
+            "email_code_sent":"E-mail d'identification à deux facteurs envoyé",
+            "two_factor_authentication_updated":"Paramètres d'identification à deux paramètres mis à jour.",
+            "password_hints_sent":"Indices de mot de passe envoyés avec succès",
+            "sms_verified":"Numéro SMS vérifié avec succès",
+            "updated_password_hint":"Indices de mot de passe mis à jour",
+            "email_verified":"E-mail vérifié avec succès",
+            "updated_ip_address":"Adresses IP mises à jour",
+            "google_secret_generated":"Google secret généré",
+            "secret_phrase_updated":"Phrase secrète mise à jour avec succès",
+            "saved_to_google_drive":"Portefeuille enregistré avec succès sur Google Drive. Vous pouvez maintenant fermer cette fenêtre",
+            "unsubscribed":"Votre e-mail a été désinscrit de toute notification",
+            "auto_backup_disabled":"La sauvegarde automatique par e-mail a été désactivée",
+            "confirmation_email_sent":"E-mail de confirmation envoyé",
+            "two_factor_authentication_request_approved":"Demande de réinitialisation de l'identification à deux facteurs approuvée. La demande sera étudiée sous peu.",
+            "language_updated":"Langue mise à jour",
+            "email_code_resent":"Code e-mail renvoyé. Vérifiez votre dossier spam ! Chaque demande manuelle de courrier électronique compte comme un échec de tentative de connexion",
+            "two_factor_reset_request_submitted":"Une demande de réinitialisation de l'identification à deux facteurs a déjà été soumise.",
+            "wallet_backup_sent":"La sauvegarde du portefeuille a été envoyée avec succès."
+         },
+         "receive_money":{
+            "sub_header":"Vos adresses Bitcoin de réception",
+            "group_by_taint":"Regroupez les adresses par Taint",
+            "anonymous_addresses_description":"Les paiements reçus via des adresses anonymes seront transmis à une autre adresse dans votre portefeuille. Tous les paiements reçus passent à travers le mélangeur pour isoler votre portefeuille personnel de l'expéditeur. Les transactions reçues via une adresse anonyme ne peuvent pas être liées à votre portefeuille régulier.",
+            "forward_to":"Faire suivre à",
+            "new_address_tooltip":"Cliquez ici pour générer une nouvelle adresse bitcoin. Vous pouvez commencer à recevoir immédiatement des bitcoins à cette adresse",
+            "delete_keys_tooltip":"Supprimez les clés privées sélectionnées.",
+            "sweep_keys_tooltip":"Déplacez les bitcoins depuis les clés sélectionnées vers une adresse bitcoin différente.",
+            "archived_addresses_description":"Les adresses archivées sont des adresses dont vous n'avez plus besoin et qui sont cachées de la vue principale, mais qui font encore partie de votre portefeuille. Vous pouvez les des-archiver à tout moment en cliquant sur l'icône bleue.",
+            "new_anonymous_address":"Nouvelle adresse anonyme",
+            "verify_message":"Vérifiez le message",
+            "anonymous_addresses_description2":"Les adresses anonymes sont valides pour une seule transaction et engendrent une taxe de 1,5 % sur les transactions.",
+            "expires_in":"Expire dans"
+         },
+         "send_coins":{
+            "to_address_help":"Entrez l'adresse Bitcoin du destinataire",
+            "review_payment":"Revoir les paiements",
+            "send_via_sms_sub":"Utilisez le formulaire ci-dessous pour envoyer des bitcoin via SMS.",
+            "public_note_tooltip":"Ajouter une note à cette transaction. Cette note sera visible sur blockchain.info.",
+            "pending":"En suspens",
+            "email_address_tooltip":"Ceci est l'adresse e-mail de la personne à qui vous souhaitez envoyer des bitcoins.",
+            "add_recipient_tooltip":"Si vous voulez envoyer des bitcoins à plusieurs destinataires à la fois, cliquez ici pour ajouter une autre adresse",
+            "send_anonymously":"Envoyer de manière anonyme",
+            "place_bet":"Placez un pari !",
+            "sms_number_tooltip":"Entrez le numéro de SMS de la personne à qui vous voulez envoyer des bitcoins.",
+            "from_address_tooltip":"Si nécessaire, vous pouvez choisir d'envoyer de la monnaie à partir d'une adresse spécifique de votre portefeuille.",
+            "send_anonymously_bonus":"Le mélangeur donne actuellement une prime pour de la monnaie neuve. Il n'y aura pas de frais pour cette transaction et un bonus de {0} BTC sera versé.",
+            "miners_fee_tooltip":"Cette taxe sera envoyée aux mineurs Bitcoin et peut aider votre transaction à être traitée plus rapidement",
+            "escrow":"Dépôt fiduciaire",
+            "anonymous_transaction_fees":"Toutes les transactions anonymes engagent des frais s'élevant à {0} %.",
+            "custom_transaction_sub":"Utilisez le formulaire ci-dessous pour envoyer un paiement à une ou plusieurs adresses Bitcoin. Il vous sera demandé de revoir votre transaction avant de la soumettre.",
+            "remove_recipient":"Retirer un destinataire",
+            "from_address":"De l'adresse",
+            "satoshi_dice_sub":"{0} est le plus populaire des jeux de pari avec Bitcoin. Gagnez jusqu'à 64 000 fois votre mise, instantanément. Chaque jet est vérifiable à l'aide de la blockchain.",
+            "btcdice_sub":"{0} - Choisissez les cotes, placer un pari et recevez vos gains en quelques secondes.",
+            "review_payment_tooltip":"Cliquez ici pour consulter le paiement. Vous serez en mesure de confirmer ou d'annuler la transaction.",
+            "send_anonymously_total":"En comprenant les taxes, le montant total de cette opération est de {0}",
+            "custom":"Personnalisé",
+            "send_anonymously_sub":"Utiliser la fonction Envoyer de manière anonyme afin de garantir que la transaction ne pourra être tracée entre l'émetteur et le récepteur.",
+            "send_via_facebook_sub":"Utilisez le formulaire ci-dessous pour envoyer des bitcoins à un ami Facebook.",
+            "to_address":"Adresser à",
+            "public_note_placeholder":"Ce message sera intégré de manière permanente à la blockchain. N'importe qui pourra le lire.",
+            "address_book_sub":"Le carnet d'adresses contient une liste d'adresses d'envoi. Vous pouvez l'utiliser pour stocker les adresses Bitcoin des personnes que vous connaissez ou des commerçants que vous utilisez fréquemment.",
+            "email_address_help":"Entrez l'adresse e-mail du destinataire"
+         },
+         "errors":{
+            "error_updating_auto_backup":"Erreur lors de la mise à jour des paramètes de sauvegarde automatique par e-mail",
+            "mobile_identifier_not_found":"L'identifiant de votre portefeuille est introuvable. Votre portefeuille n'est pas encore enregistré sur notre serveur pour le moment. Veuillez créer un nouveau compte pour éviter de perdre votre portefeuille.",
+            "unknown_identifier":"Identifiant portefeuille inconnu. Veuillez vérifier que vous l'avez correctement entré.",
+            "error_validating_yubikey":"Erreur lors de la validation Yubikey",
+            "error_updating_two_factor_authentication":"Erreur lors de la mise à jour de l'identification à deux facteurs.",
+            "error_updating_ip_lock":"Erreur lors de la mise à jour du verrouillage IP",
+            "two_factor_enabled_no_email":"L'identification à deux facteurs est activée, mais vous n'avez pas encore ajouté d'e-mail.",
+            "error_updating_local_currency":"Erreur lors de la mise à jour de la monnaie locale",
+            "checksum_reread_failed":"Le portefeuille a été mis à jour, cependant la somme de contrôle (checksum) n'a pas été validée à la relecture ! C'est une erreur grave, veuillez contacter {0}",
+            "wallet_size_restricted":"Les portefeuilles sont limités à 1 Mo",
+            "two_factor_enabled_email_not_verified":"L'identification à deux facteurs est activée, mais vous n'avez pas encore vérifié votre e-mail.",
+            "authentication_code_incorrect":"Le code d'identification est incorrect",
+            "wallet_identifier_not_found":"L'identifiant du portefeuille est introuvable",
+            "error_generating_google_secret":"Erreur lors de la génération du secret Google Authenticator",
+            "password_hints_not_set":"Les indices pour les mots de passe n'ont pas été entrés pour ce portefeuille",
+            "two_factor_authentication_request_declined":"La demande de réinitialisation de l'identification à deux facteurs a été refusée",
+            "error_generating_auth_code":"Erreur lors de la génération du code d'identification",
+            "error_updating_notification_settings":"Erreur lors de la mise à jour des paramètres de notification",
+            "error_updating_password_hint":"Erreur lors de la mise à jour de l'indice pour le mot de passe",
+            "error_unsubscribing":"L'identifiant de portefeuille ou le code reçu par e-mail était incorrect. Vous n'avez pas été désabonné",
+            "error_saving_to_dropbox":"Erreur lors de la sauvegarde sur Dropbox",
+            "error_saving_wallet":"Erreur lors de la sauvegarde du portefeuille",
+            "error_updating_ip_address":"Erreur lors de la mise à jour des adresses IP",
+            "checksum_invalid":"La somme de contrôle (checksum) n'a pas validée",
+            "authentication_code_invalid":"Code d'identification invalide",
+            "two_factor_authentication_not_enabled":"L'identification à deux facteurs n'est pas activée sur votre compte",
+            "error_creating_two_factor_reset_request":"Erreur lors de la création de la demande de réinitialisation de l'identification à deux facteurs",
+            "failed_to_get_wallet":"Impossible d'obtenir l'objet Wallet.",
+            "error_updating_sms":"Erreur lors de la mise à jour du numéro SMS",
+            "account_locked_to_another_ip":"Ce compte est verrouillé à une autre adresse IP.",
+            "email_not_found":"Email introuvable",
+            "error_updating_yubikey":"Erreur lors de la mise à jour de Yubikey",
+            "invalid_payload":"Payload invalide",
+            "authentication_code_used_already":"Ce code d'identification a déjà été utilisé auparavant",
+            "login_attempts_left":"{0} tentatives de connexion restantes",
+            "email_updated_eror_sending_link":"L'e-mail a été mis à jour. Cependant, une erreur s'est produite lors de l'envoi du lien de confirmation.",
+            "email_code_incorrect":"Code de vérification incorrect",
+            "error_updating_auth_saving":"Erreur lors de la mise à jour des paramètres d'identification",
+            "error_updating_language":"Erreur lors de la mise à jour de la langue",
+            "error_updating_secret_phrase":"Erreur lors de la mise à jour de la phrase secrète",
+            "error_sending_password_hints":"Erreur inconnue lors de l'envoi des indices de mot de passe",
+            "email_address_invalid":"L'adresse e-mail est invalide",
+            "unknown_currency_code":"Code devise inconnue",
+            "invalid_length":"Le paramètre de longueur doit être numérique",
+            "error_sending_sms_code":"Une erreur est survenue lors de l'envoi du SMS pour le code d'identification à deux facteurs.",
+            "error_updating_skype":"Erreur lors de la mise à jour du nom de compte Skype",
+            "error_sending_two_factor_email":"Une erreur est survenue lors de l'envoi de l'e-mail pour le code d'identification à deux facteurs",
+            "alias_in_use":"Alias déjà \u200B\u200Butilisé par un autre portefeuille",
+            "error_sending_wallet_backup":"Erreur lors de l'envoi de la sauvegarde du portefeuille",
+            "error_updating_email":"Erreur lors de la mise à jour de l'e-mail",
+            "error_saving_to_google_drive":"Erreur lors de la sauvegarde sur Google Drive",
+            "error_updating_alias":"Erreur lors de la mise à jour de l'alias",
+            "sms_code_incorrect":"Le code de vérification par SMS est incorrect.",
+            "payload_null":"Erreur grave ! Le Payload semble être nul"
+         },
+         "tooltips":{
+            "balance":{
+               "tip":"Cela montre le solde actuel de votre portefeuille bitcoin. Vous n'êtes pas en mesure de dépenser cette somme jusqu'à ce que toutes les transactions soient confirmées.",
+               "title":"Votre solde"
+            },
+            "connection_status":{
+               "tip":"Si vous êtes déconnecté, vous devrez rafraîchir la page pour voir de nouvelles transactions. Lorsque vous serez connecté, les nouvelles transactions s'afficheront instantanément."
+            }
+         }
+      },
+      "largest_transactions":{
+         "meta_description":"Une liste des plus importantes transactions bitcoin récentes",
+         "header":"Les plus importantes opérations récentes",
+         "title":"Les transactions bitcoin les plus importantes - Blockchain.info"
+      },
+      "charts":{
+         "operating_margin_label":"% du bénéfice d'exploitation",
+         "my_wallet_n_users2":"Nombre de portefeuilles utilisant notre service My Wallet.",
+         "hash_rate":"Taux de hash",
+         "days_destroyed_cumulative2":"Bitcoin Days Destroyed est une mesure du volume des transactions de Bitcoin. Si quelqu'un dispose de 100 BTC qu'il a reçu il y a une semaine et qu'il le dépense, alors 700 Days Bitcoin ont été détruits. S'il prend ces 100 BTC et les envoie à plusieurs adresses puis les dépense, le volume total de la transaction pourrait être arbitrairement élevé, mais le nombre de Bitcoin Days Destroyed est encore de 700.",
+         "all_time":"De tous les temps",
+         "estimated_transaction_volume_usd":"Estimation du volume des transactions en USD",
+         "my_wallet_transaction_volume2":"Volume des transactions de notre service de portefeuille électronique durant les dernières 24 heures.",
+         "days_destroyed_filter_month2":"Filtré par âge d'entrée (minimum de 1 mois).",
+         "blockchain_size_label":"Mo",
+         "estimated_transaction_volume_usd2":"Estimation du volume des transactions en USD.",
+         "my_wallet_n_tx":"Nombre de transactions d'utilisateurs de My Wallet par jour",
+         "days_destroyed":"Bitcoin Days Destroyed",
+         "miners_revenue2":"Graphique historique indiquant le nombre de bitcoins miné par jour + frais de transaction * prix du marché.",
+         "mywallet_n_transactions_per_day":"My Wallet: Nombre de transactions par jour",
+         "total_bitcoins2":"Un graphique montrant le nombre total historique de bitcoins qui ont été minés.",
+         "cost_percent_per_transaction_label":"% du volume des transactions",
+         "days_destroyed_filter_week2":"Les entrées sont filtrées par leur âge, seules celles ayant plus d'une 1 semaine minimum sont affichées.",
+         "my_wallet_transaction_volume":"Volume des transactions My Wallet",
+         "n_unique_addresses":"Nombre d'adresses Bitcoin uniques utilisées",
+         "n_transactions2":"Un tableau montrant le nombre total de transactions Bitcoin uniques par jour.",
+         "days_destroyed_label":"Day Destroyed",
+         "days_destroyed_filter_year":"Bitcoin Days Destroyed (minimum de 1 an)",
+         "total_bitcoins_label":"Bitcoins total (BTC)",
+         "operating_margin2":"Le graphique montre les revenus estimés des mineurs moins les frais d'électricité et de bande passante.",
+         "mywallet_balance_over_time":"My Wallet : Solde au fil du temps",
+         "estimated_transaction_volume2":"Semblable au volume de sortie totale avec l'ajout d'un algorithme qui tente de supprimer le change de la valeur totale. Cela donne peut-être une idée plus précise du véritable volume de transactions.",
+         "meta_description":"Les graphiques les plus populaires et statistiques sur le réseau bitcoin. Nombre de transactions par jour, le prix du marché, etc.",
+         "avg_confirmation_time_label":"Délai de validation (minutes)",
+         "blockchain_size2":"La taille totale de tous les en-têtes de bloc et des transactions. N'inclut pas les index de base de données.",
+         "market_price":"Prix du marché (USD)",
+         "raw_values":"Valeurs brutes",
+         "my_wallet_n_users":"Nombre d'utilisateurs du service My Wallet",
+         "errors":{
+            "no_stats":"Pas de stats trouvées pour cette période"
+         },
+         "n_unique_addresses2":"Un tableau montrant le nombre d'adresses bitcoin uniques utilisées par jour.",
+         "market_price_usd":"Prix du marché (USD)",
+         "operating_margin":"Marge d'exploitation du minage",
+         "transaction_fees2":"Un graphique indiquant la valeur totale en BTC que les mineurs gagnent en frais de transaction par jour.",
+         "blockchain_size":"Taille de la blockchain",
+         "avg_confirmation_time":"Temps moyen de confirmation d'une transaction",
+         "show_data_points":"Afficher les points de données",
+         "days_destroyed_filter_month":"Bitcoin Days Destroyed (Filtré par Âge minimum 1 mois)",
+         "total_receive_per_day":"BTC total reçu par jour pour :",
+         "market_price2":"Un graphique indiquant le prix du marché en USD (Source : Mt.Gox)",
+         "miners_revenue_label":"Revenu des mineurs (BTC)",
+         "hash_rate2":"L'estimation du nombre de gigahash par seconde (milliards de hash par seconde) que le réseau bitcoin atteint.",
+         "mywallet_total_Received_per_day":"Mon portefeuille : total reçus par jour pour :",
+         "hash_rate_label":"Hashrate GH \/ s",
+         "n_transactions_excluding_popular2":"Un tableau montrant le nombre total de transactions Bitcoin uniques par jour, hors opérations implquant le top 100 des ",
+         "mywallet_total_btc_received":"Mon portefeuille : BTC reçus",
+         "days_destroyed_filter_year2":"Filtré par âge d'entrée (minimum de 1 an).",
+         "avg_confirmation_time2":"Le temps moyen que prennent les transactions pour être acceptées dans un bloc.",
+         "total_received_to_address":"Total reçu à l'adresse bitcoin :",
+         "days_destroyed_cumulative":"Bitcoin Days Destroyed cumulatif",
+         "sub_header":"Divers graphiques sur bitcoin et statistiques monétaires",
+         "output_volume_label":"Volume de sortie (BTC)",
+         "cost_percent_per_transaction":"% du coût du volume des transactions",
+         "network_deficit2":"Affiche la différence entre les frais de transaction et les coûts de minage de bitcoin.",
+         "days_destroyed_filter_week":"Bitcoin Days Destroyed (filtré avec un âge minimum de 1 semaine)",
+         "output_volume2":"La valeur totale de toutes les transactions sorties par jour. Cela comprend les pièces qui ont été retournées à l'expéditeur en tant que change.",
+         "miners_revenue":"Revenu des mineurs",
+         "days_destroyed2":"Une version non cumulative de Bitcoin Day Destroyed."
+      },
+      "transaction_page":{
+         "sub_header":"Afficher les informations d'une transaction bitcoin",
+         "meta_description":"Afficher les informations d'une transaction bitcoin {0}",
+         "tree_chart":"Voir le graphique",
+         "fees":"Taxes",
+         "estimated_possibly_never":"Peut-être jamais (double dépense)",
+         "minutes":"minutes",
+         "show_scripts":"Voir les scripts et coinbase",
+         "hide_scripts":"Cacher les scripts et coinbase",
+         "double_spend":{
+            "p1":"Attention ! Cette opération est une double dépense de ",
+            "p2":"Vous devez être extrêmement prudent lorsque vous approuvez toutes les transactions de\/vers cet expéditeur."
+         },
+         "network_propagation":"Propagation réseau (Cliquer pour afficher)",
+         "title":"Transaction Bitcoin {0}",
+         "ok":"ok"
+      },
+      "rejected":{
+         "header":"Inventaire des rejets",
+         "hash":"Hash"
+      },
+      "footer":{
+         "about_us":"Qui sommes-nous ?",
+         "advanced":"Mode avancé :",
+         "enable":"Activer",
+         "ok":"Ok"
+      },
+      "popular_addresses":{
+         "sub_header":"Adresses Bitcoin les plus populaires selon le nombre de sorties",
+         "meta_description":"Une liste des 100 adresses Bitcoin les plus populaires par le nombre de sorties.",
+         "title":"Les 100 addresses Bitcoin les plus populaires - Blockchain.info"
+      },
+      "webgl_globe":{
+         "online_now":"En ligne en ce moment",
+         "header":"Nœuds bitcoin globaux",
+         "title":"Nœuds Bitcoin Web GL Globe - Blockchain.info",
+         "home":"Accueil"
+      },
+      "pools":{
+         "sub_header":"Une estimation de la répartition du hashrate parmi les piscines minières les plus importantes",
+         "meta_description":"Un diagramme circulaire montrant la répartition du hashrate entre les plus grandes piscines minières Bitcoin",
+         "p1":"Le graphique ci-dessous montre la part de marché des piscines minières Bitcoin les plus populaires. Il ne doit être utilisée que comme une estimation approximative et ne sera pas précis à 100 % pour des raisons diverses.",
+         "count":"Total",
+         "warning":"Une large part de blocs inconnus ne signifie pas une attaque sur le réseau, cela signifie simplement que nous n'avons pas été en mesure d'en déterminer l'origine.",
+         "header":"Répartition du hashrate",
+         "relayed_by":"Relayé par"
+      },
+      "block_height":{
+         "sub_header":"Blocs de profondeur {0} dans la blockchain bitcoin",
+         "block_reward":"Récompense du bloc",
+         "estimated_transaction_volume":"Volume estimé des transactions",
+         "nonce":"Nonce",
+         "hash":"Hash",
+         "error_fetching_blocks":"Erreur inconnue lors de l'obtention de blocs depuis la base de données"
+      },
+      "hub_nodes":{
+         "sub_header":"Affiche les nœuds qui ont relayé le plus de transactions en premier à blockchain.info. Les nœuds sur cette page sont souvent connectés aux super-nœuds pour les commerçants ou les mineurs.",
+         "header":"Les super-nœuds"
+      },
+      "emails":{
+         "authorize_login":{
+            "p1":"Une tentative d&#39;accéder à votre portefeuille blockchain.info a été faite à partir d&#39;un navigateur inconnu. Veuillez confirmer que les informations suivantes sont correctes:",
+            "p2":"Si vous souhaitez autoriser les connexions depuis cette machine, merci de vous assurer que les informations ci-dessous sont correctes et de cliquer sur le lien de validation ci-dessous:",
+            "p3":"Une tentative de connexion à votre portefeuille blockchain.info est survenue. Si vous n'êtes pas à l'origine de cette tentative de connexion, nous vous invitons à changer l'alias de votre portefeuille."
+         },
+         "top_tip":"Top conseils",
+         "tx":{
+            "sent_p1":"Un paiement a été envoyé à partir de votre portefeuille bitcoin.",
+            "received_p1":"Un paiement a été reçu dans votre portefeuille bitcoin.",
+            "header_sent":"Notification de paiement envoyé",
+            "header_received":"Notification de paiement reçu"
+         },
+         "confirmation_code":{
+            "p1":"Une tentative de connexion à votre compte My Wallet a été faite depuis l'adresse IP {0}. Entrez le code de confirmation ci-dessous pour accéder à votre compte. Si vous n'avez pas fait cette tentative de connexion, vous pouvez ignorer cet e-mail."
+         },
+         "account_locked":{
+            "p1":"Un certain nombre de tentatives de connexion infructueuses à votre portefeuille ont été faites. Pour votre protection, les nouvelles tentatives de connexion ont été désactivées jusqu'à {0}",
+            "p2":"Si ces tentatives de connexion ne sont pas de votre part, il est recommandé de changer votre mot de passe dès que le compte est à nouveau disponible. Si vous êtes particulièrement concerné, contactez-nous afin d'étendre le verrouillage du compte."
+         },
+         "two_factor_reset_request":{
+            "p1":"Une demande a été faite pour supprimer l'identification à deux facteurs de votre compte My Wallet :",
+            "p2":"Si vous êtes l'auteur de cette demande, ouvrez l'URL suivante pour l'approuver :",
+            "p3":"Si vous n'êtes pas l'auteur de cette demande, ouvrez l'URL suivante pour la refuser :",
+            "p4":"Il est possible que quelqu'un essaye d'accéder à votre portefeuille bitcoin de manière frauduleuse. N'ignorez pas cette demande !",
+            "header":"Demande de réinitialisation de l'identification à deux facteurs"
+         },
+         "your_wallet_identifier":"Votre identifiant de portefeuille est le suivant :",
+         "tip_backup":"Sauvegardez votre portefeuille bitcoin en utilisant Dropbox. C'est gratuit, facile à utiliser et sûr.",
+         "password_hints":{
+            "p1":"Vous recevez cet e-mail car une demande a été faite pour voir les indices des mots de passe de votre portefeuille.",
+            "main_hint":"Indice du mot de passe principal :",
+            "header":"Indices de mot de passe de votre portefeuille",
+            "second_hint":"Deuxième indice de mot de passe: "
+         },
+         "welcome":{
+            "p1":"Cet e-mail contient des informations importantes sur votre nouveau portefeuille bitcoin. Soyez sûr de le garder de manière sûre et stockez-le séparément de votre mot de passe.",
+            "login_link":"Lien pour vous connecter :",
+            "header":"Bienvenue dans votre compte My Wallet"
+         },
+         "tip_reversible":"Ce paiement peut être annulé par l'expéditeur aussi longtemps qu'il n'est pas réclamé.",
+         "wallet_backup":{
+            "p1":"Vous pouvez trouver joint à cet e-mail une sauvegarde de votre portefeuille chiffrée en AES qui contient tout ce dont vous avez besoin pour rétablir votre portefeuille bitcoin. Vous pouvez l'utiliser pour restaurer le portefeuille à tout moment : {0} ou en utilisant le client Desktop tiers : {1}.",
+            "header":"Sauvegarde de votre portefeuille"
+         }
+      },
+      "connected_nodes":{
+         "sub_header":"Liste des nœuds auxquels blockchain.info est connecté",
+         "total_connected":"Connexions totales : {0}",
+         "header":"Nœuds connectés",
+         "title":"Liste des nœuds Bitcoin connectés"
+      },
+      "stats":{
+         "meta_description":"Plus de 100 marchés bitcoin différents et statistiques du réseau. Nombre de nœuds, le volume des transactions, difficulté des mines et plus encore.",
+         "notice2":"Pour la marge bénéficiaire, les coûts matériels sont estimés à 1000 $ par gigahash tous les 2 ans, et la bande passante à 1 $ par gigahash et par an.",
+         "notice1":"La consommation d'électricité est estimée sur la base d'une consommation de 650 Watts par gigahash et d'un prix de l'électricité de 15 cents par kilowatt-heure. En réalité, certains mineurs seront plus ou moins efficaces.",
+         "table":{
+            "mining_cost":"Coût du minage",
+            "trade_volume":"Volume de transactions",
+            "hash_rate":"Taux de hash",
+            "mining_profits":"Les bénéfices de minage",
+            "minutes":"minutes",
+            "time_between_blocks":"Temps écoulé entre chaque bloc",
+            "operating_margin":"Marge bénéficiaire",
+            "percent_earned_from_fees":"% de gains grâce aux frais de transaction",
+            "estimated_transaction_volume":"Volume estimé des transactions",
+            "percent_of_transaction_volume":"% du volume des transactions",
+            "operating_profit":"Bénéfice d'opération",
+            "electricity_cost":"Prix de l'électricité",
+            "blocks_mined":"Blocs minés",
+            "bitcoins_mined":"Bitcoins minés",
+            "hash_rate_electricity":"Taux de hash et consommation d'électricité"
+         }
+      },
+      "payment_request":{
+         "p1":"Utilisez ce formulaire pour demander à quelqu'un qu'il vous envoie des Bitcoins ou tout simplement pour montrer aux gens que vous avez une adresse bitcoin.",
+         "pay_me":"Payez-moi avec des bitcoins",
+         "please_send":"Veuillez envoyer votre paiement à l'adresse bitcoin"
+      },
+      "about_us":{
+         "company_footer":"Blockchain.info est détenu et exploité par Qkos Services Ltd, enregistrée en tant que société britannique numéro 05106799",
+         "up_time_alt":"Uptime pour blockchain.info : 30 derniers jours",
+         "security_p1":"Notre politique de sécurité est de garder le moins de données possible dans le cas d'une faille de sécurité pouvant affecter nos utilisateurs. En utilisant le service My Wallet, nous ne détenons ni interceptons les mots de passe ou identifiant personnels. Les données du portefeuille ne sont stockées que sous forme cryptée. Blockchain.info fonctionne sur du matériel dédié privé qui ne peut être accédé que par l'administrateur du site. Nous effectuons des examens de sécurité réguliers, à la fois sur notre code et sur nos serveurs, y compris le scan de notre site en utilisant nmap pour détecter d'éventuelles vulnérabilités rapidement. Le site peut être accédé en toute sécurité avec https:\/\/ (vérifié par GoDaddy).",
+         "about_p1":"Blockchain.info est le portefeuille Bitcoin le plus populaire et explorateur de bloc. En octobre 2012, le site reçoit plus de 10 000 visiteurs par jour et possède plus de 30 000 utilisateurs.",
+         "privacy":"Données privées",
+         "up_time":"Uptime",
+         "availability":" Nous visons à 99,5 % d'uptime mais ce service est fourni sur la base du meilleur effort. Si une maintenance programmée est prévue, nous en aviserons les utilisateurs par e-mail.",
+         "view_website_status":"Afficher l'état du site web",
+         "email":"E-mail :",
+         "disclaimer":"Avis de non-responsabilité",
+         "privacy_p1":"Nous enregistrons les logs d'accès de toutes les pages du site à des fins d'analyse seulement. Les logs d'accès sont tronqués tous les 7 jours. Nous n'enregistrons aucune donnée relative aux transactions effectuées par le biais de My Wallet ainsi que les adresses bitcoin utilisées dans My Wallet. Toute adresse e-mail, nom Skype ou d'autres données personnelles fournies ne seront pas partagées avec une autre tierce partie ou des annonceurs."
+      },
+      "double_spends":{
+         "sub_header":"Double dépense détectée dans les 500 000 dernières transactions (10 minutes de cache)",
+         "header":"Double dépense",
+         "warning":"Une double dépense sur cette page peut être involontaire. Dans le cas où une double dépense, construite de manière malveillante, est listée sur cette page, rien n'indique que cela a été un succès ou si un commerçant ou un utilisateur a perdu de l'argent en conséquence.",
+         "title":"Bitcoin double dépense - Blockchain.info"
+      },
+      "api_index":{
+         "requests_in_8_hours":"Requêtes en 8 heures :",
+         "abuse_notice":"Les services fournis par blockchain.info sont gratuits. Prière de ne pas en abuser.",
+         "title":"API pour développeur Bitcoin - Blockchain.info",
+         "bitpay_description":"Blockchain recommande fortement Bitpay - Le leader mondial des solutions d'affaires Bitcoin. Bitpay offre une solution complète comprenant la conversion automatique en monnaies locales et l'intégration d'une multitude de logiciels de gestion de panier.",
+         "simple_query_api":"Simple Query API",
+         "request_limits":"Limites de requêtes",
+         "request_limits_p1":"Pour récuperer un code API afin de contourner la limite : ",
+         "account_required":"Un compte My Wallet est requis",
+         "simple_query_api_description":"Une API simple et en plaintext pour interroger les données des blockchain. Compatible avec",
+         "complete_merchant_solution":"Solution marchande complète.",
+         "welcome":"Bienvenue aux développeurs !",
+         "charts_and_statistics_description":"Flux JSON contenant les données provenant des graphiques et des pages de statistiques.",
+         "exchange_rates_data":"Les données sur la monnaie des principaux sites d'échanges Bitcoin.",
+         "data_api":"Blockchain Data API",
+         "receive_payments_description":"Une méthode incroyablement facile pour permettre à un site de recevoir des paiements Bitcoin.",
+         "data_api_description":"Interroger des données JSON sur les blocs et les transactions. Presque toutes les données que vous voyez sur ce site sont disponibles au format JSON.",
+         "sub_header":"Outils pour développeurs afin d'obtenir des données sur la blockchain",
+         "third_party_apis":"API tierce",
+         "requests_in_5_minutes":"Requêtes en 5 minutes :",
+         "send_description":"Une API JSON très simple pour programmer l'envoi et la réception de bitcoins depuis un compte My Wallet.",
+         "send_payments":"Envoi de paiements",
+         "websocket_description":"Un canal de streaming à faible latence fournissant des données sur les nouveaux blocs et les transactions. Abonnez-vous aux notifications de blocs, des opérations ou à une adresse, et recevez des objets JSON décrivant une transaction ou un bloc lorsqu'un événement se produit.",
+         "up_time":"Uptime des services",
+         "welcome_p1":"Vous trouverez ici tout ce dont vous avez besoin pour commencer à coder pour bitcoin. Vous pouvez utiliser l'API de Blockchain.info ou une",
+         "up_time_description":"Blockchain.info utilise un cluster de base de données haute disponibilité et du matériel dédié pour un uptime maximum et des temps de réponse faible.",
+         "json_rpc_description":"Blockchain.info est capable de fonctionner comme un serveur RPC bitcoind pour permettre aux marchands d'interagir avec leur compte My Wallet."
+      },
+      "block":{
+         "no_block_index":"Aucun index de bloc fourni",
+         "meta_description":"Les transactions contenues dans le bloc bitcoin ",
+         "summary_table":{
+            "block_reward":"Récompense du bloc",
+            "estimated_transaction_volume":"Volume estimé des transactions",
+            "nonce":"nonce",
+            "timestamp":"Date (timestamp)",
+            "height":"Taille"
+         },
+         "hash_table":{
+            "next_block":"Bloc(s) suivant(s) ",
+            "title":"Hashes",
+            "hash":"Hash"
+         },
+         "click_to_view":"Cliquez pour voir",
+         "header":"Bloc",
+         "title":"Bloc bitcoin # {0}"
+      },
+      "wallet_index":{
+         "p1":"My Wallet est un portefeuille bitcoin gratuit en ligne que vous pouvez utiliser pour faire des paiements anonymes à travers le monde, gratuitement. Nous rendons possibles des paiements faciles avec bitcoin et de manière sécurisée, que ce soit sur votre téléphone ou sur votre ordinateur.",
+         "slides":{
+            "charts_analytics_p1":"Générer des graphiques et rapports des transactions Bitcoin récentes. Voir le solde de votre compte au fil du temps, le nombre de transactions et le revenu journalier.",
+            "mobile_support_p2":"Si votre téléphone est perdu ou volé, votre portefeuille sera toujours sauvegardé en toute sécurité sur nos serveurs.",
+            "mobile_support_p1":"Notre interface web prend en charge tous les téléphones mobiles populaires, y compris",
+            "double_encryption_p1":"Avant que votre portefeuille bitcoin soit enregistré sur nos serveurs, il est crypté en AES 256 bits dans votre navigateur. Votre mot de passe n'est jamais partagé, ce qui veut dire que même nous ne pouvons pas ouvrir votre portefeuille. Vous pouvez éventuellement crypter votre portefeuille à nouveau avec un second mot de passe, vous aurez donc un mot de passe pour ouvrir une session et un autre mot de passe pour effectuer des transactions. Si cela ne suffit pas, nous soutenons également une variété de méthodes d'identification à deux facteurs, y compris des Yubikeys Mt.Gox.",
+            "one_click_backups_p1":"Nous nous efforçons de garder votre portefeuille sauvegardé en toute sécurité. Cependant, vous devriez aussi avoir une sauvegarde sur votre propre PC. Il suffit d'un clic pour avoir vos portefeuille et e-mail cryptés, enregistré sur votre compte Dropbox ou enregistré localement. Alors même si blockchain.info perd des données ou n'est plus accessible, vous pouvez toujours accéder à vos fonds.",
+            "double_encryption":"Double chiffrement",
+            "payment_notifications_gtalk":"Notifications de paiement Bitcoin via Google Talk",
+            "payment_notifications_p1":"Recevoir des notifications à chaque fois qu'un paiement est envoyé ou reçu par votre portefeuille bitcoin. Le délai moyen d'une notification de paiement est inférieur à 50 ms. Si vous recevez un paiement en étant connecté à My Wallet un son est joué et l'interface mise à jour instantanément sans avoir besoin de recharger la page.",
+            "payment_notifications_skype":"Notifications de paiement Bitcoin via Skype",
+            "mobile_support":"Assistance pour Mobile",
+            "charts_analytics_img_title":"Graphiques internes et analyses",
+            "charts_analytics":"Graphiques & Analyses",
+            "one_click_backups":"Sauvegarde en un clic"
+         },
+         "p2":"Nous ne sommes pas une banque, vous conservez la propriété complète de votre argent. Nous ne pouvons pas consulter votre solde, voir vos transactions ou faire de paiements en votre nom.",
+         "techradar_quote":"En 2015, le cash pourrait ressembler à une espèce en voie de disparition",
+         "free_open_source":"Gratuit (libre). Open Source.",
+         "introduction_video":"Voir la vidéo de présentation sur Bitcoin",
+         "successfully_transacted":"échangé avec succès.",
+         "control":{
+            "p1":"La beauté de bitcoin, c'est qu'il est totalement décentralisé, aucun gouvernement ou société ne peut bloquer les paiements ou révoquer les comptes.",
+            "p2":"Avec My Wallet, vous conservez le plein contrôle de votre",
+            "p4":"signifie que les portefeuilles ne peuvent jamais être saisis ou bloqués et peuvent être importés dans n'importe quel client desktop bitcoin."
+         },
+         "title":"Portefeuille bitcoin",
+         "easy":{
+            "p1":"L'utilisation de My Wallet n'est pas différente de l'utilisation de",
+            "p2":"ou services bancaires en ligne. Lors de la connexion, votre solde vous sera présenté ainsi qu'une liste de vos dernières opérations"
+         },
+         "confused":{
+            "p1":"Confus ? Lire la'",
+            "p2":"FAQ pour débutants"
+         },
+         "meta_description":"My Wallet est un portefeuille bitcoin en ligne gratuit que vous pouvez utiliser pour faire des paiements anonymes à travers le monde, et le tout gratuitement. Nous rendons les paiements en bitcoins faciles et sécurisés.",
+         "features":{
+            "p1":"Le plus avancé des portefeuilles bitcoin disponible en ligne.",
+            "client_side_encryption":"Chiffrement sécurisé du côté client",
+            "payment_notifications":"Notifications de paiement par e-mail et SMS",
+            "title":"Riche en caractéristiques"
+         },
+         "security":{
+            "p2":"Chiffrement pour protéger votre portefeuille contre les voleurs et les pirates. Le plus stupéfiant est que le chiffrement est fait dans votre navigateur avant d'être sauvegardé sur nos serveurs, nous n'avons donc même pas besoin d'accéder à votre compte !",
+            "p3":"My Wallet se fonde sur la sécurité de Bitcoin en fournissant une multitude de fonctionnalités pour vous aider à garder votre argent à l'abri, y compris",
+            "paper_wallets":"Portefeuilles sur papier",
+            "title":"Sécurisé",
+            "offline_transactions":"Transactions hors ligne"
+         },
+         "anonymous":{
+            "p1":"Tous ce dont nous avons besoin pour créer un compte est un mot de passe, aucune autre information qui vous identifierait personnellement n'est nécessaire. Nous ne pouvons pas voir vos clés publiques, consulter vos transactions ou vérifier le solde de votre compte.",
+            "p2":"My Wallet comprend également un",
+            "p3":"garantissant des transactions 100 % anonymes.",
+            "mixing_service":"service de mélange"
+         },
+         "create_my_free_wallet":"Créer mon compte My Wallet gratuitement",
+         "merchants":{
+            "p1":"Des milliers de commerçants acceptent déjà Bitcoin dans le monde entier et de nombreux autres se joignent à eux tous les jours. Du poker en ligne à un café biologique, vous pouvez presque tout acheter avec des bitcoins."
+         },
+         "tooltips":{
+            "paper_wallet_title":"Portefeuille sur papier",
+            "aes_title":"Chiffrement AES",
+            "private_key":"Les adresses Bitcoin se composent en deux parties. La clé privée est la partie qui est utilisée pour prouver la propriété d'une adresse et est nécessaire pour retirer des fonds. Elle doit toujours être conservée en lieu sûr.",
+            "remote_backup":"Une sauvegarde à distance, c'est quand votre porte-monnaie est stocké dans un endroit séparé autre que votre PC local. Il est important de vous assurer que votre argent n'est pas perdu en cas de panne de disque dur ou d'autre dysfonctionnement de l'ordinateur",
+            "offline_transactions":"Les transactions hors-ligne sont les transactions bitcoins qui sont générées sans connexion à Internet. Elles sont considérées comme plus sûres car votre PC est isolé d'Internet.",
+            "paper_wallet":"Un portefeuille sur papier est un document imprimable qui contient toutes les informations nécessaires pour récupérer vos bitcoins.",
+            "aes":"Un standard de chiffrement extrêmement fort adopté par le gouvernement américain et désormais largement utilisé dans le monde entier par les VPN et autres communications chiffrées"
+         }
+      },
+      "misc":{
+         "disclaimer":"Toute utilisation du terme 'argent' sur ce site se réfère uniquement à la monnaie virtuelle. Les taux de change affichés sont fournis par des tierces-parties et ne sont pas une indication que Bitcoin est soutenu par une marchandise ou toute autre monnaie."
+      },
+      "error_page":{
+         "p1":"Si vous croyez qu'il s'agit d'une erreur, veuillez contacter {0}.",
+         "error_404":"Page introuvable, veuillez vérifier que vous avez saisi l'adresse correctement."
+      },
+      "wallet":{
+         "new_users_p1":"La création d'un nouveau portefeuille bitcoin prend littéralement quelques secondes. Vous serez immédiatement en mesure d'envoyer et de recevoir des paiements.",
+         "existing_users":"Utilisateurs existants",
+         "my_wallet":"My Wallet",
+         "help_p1":"Veuillez consulter la FAQ pour les questions les plus fréquemment posées. Contactez-nous pour tout problème avec le site.",
+         "existing_users_p1":"Si vous avez déjà créé un compte My Wallet, cliquez ci-dessous pour vous connecter."
+      },
+      "address":{
+         "meta_description":"Transactions envoyées et reçues depuis l'adresse bitcoin ",
+         "invalid_address":"Désolé, ce n'est n'est pas une adresse bitcoin valide",
+         "deposit_with_cash":"Dépôt avec du cash",
+         "no_transactions":"Aucune transaction trouvée pour cette adresse, elle n'a probablement pas été utilisée sur le réseau pour le moment.",
+         "table_summary":{
+            
+         },
+         "escrow":"escrow",
+         "invalid_hash_160":"Désolé, ce n'est pas un hash160 valide",
+         "double_spend_warning":"Attention ! Cette adresse bitcoin contient des transactions qui peuvent être des doubles dépenses. Vous devez être extrêmement prudent lorsque vous approuvez toutes les transactions de \/ vers cette adresse.",
+         "table_transactions":{
+            "total_received":"Total reçu"
+         },
+         "too_large_to_filter":"Ce registre d'adresses est trop grand pour être filtré"
+      },
+      "blocks":{
+         "blocks_found_by":"Blocs récents trouvés par {0}",
+         "title1":"Blocs récents trouvés par {0}",
+         "title2":"Les blocs minés sur",
+         "mined_on":"Les blocs minés sur :",
+         "hash":"Hash"
+      },
+      "startup_message":{
+         "p1":"Nous devrions être de retour dans quelques secondes. Il pourrait même y avoir de nouvelles fonctionnalités.",
+         "header":"Le site est en cours de chargement\u2026"
+      },
+      "relayed_by":{
+         "warning":"Ces adresses IP ont été les premières à relayer une transaction impliquant l'adresse sélectionnée. Cela ne signifie pas nécessairement qu'elles sont propriétaires de la transaction."
+      },
+      "home":{
+         "other_links":{
+            "nodes2":"Un journal regroupant les nœuds bitcoin auxquels blockchain.info s'est connecté",
+            "largest":"Les grosses transactions",
+            "wallet":"Mon portefeuille",
+            "orphaned2":"Blocs valides qui ne font pas partie de la chaîne principale bitcoin",
+            "rejected":"Inventaire des rejets",
+            "double_spends2":"Double dépense détectée dans les 500 000 dernières transactions",
+            "largest2":"Les 100 plus grandes transactions des 50.000 dernières transactions",
+            "pools":"Statistiques de la piscine minière",
+            "wallet2":"Gérez votre argent avec le portefeuille Bitcoin le plus avancé sur le web.",
+            "hub_nodes2":"Une liste des super-nœuds-bitcoin les plus connectés",
+            "globe2":"Globe WebGL montrant les nœuds bitcoin (Requiert Chrome ou Safari)",
+            "hub_nodes":"Liste des nœuds",
+            "nodes":"Liste des nœuds Bitcoin",
+            "globe":"Globe des nœuds bitcoin",
+            "pools2":"Diagramme à secteurs montrant la part de marché des plus importantes piscines minières Bitcoin",
+            "notifications2":"Recevoir des notifications gratuites par e-mail quand il y a de l'activité sur vos adresses Bitcoin",
+            "double_spends":"Double dépense",
+            "header":"Autres liens Bitcoin"
+         },
+         "sub_header":"Blocs récemment extraits de la blockchain bitcoin",
+         "search_placeholder":"Adresse \/ Firstbits \/ IP \/ SHA hash",
+         "meta_description":"Explorateur de blocs Bitcoin et statistiques monétaires. Voir des informations détaillées sur toutes les transactions Bitcoin et les blocs.",
+         "search_explain":"Vous pouvez entrer une taille de bloc, une adresse, un hash de bloc, un hash de transaction, un hash160 ou une adresse IPv4\u2026",
+         "table_headers":{
+            "height":"Taille"
+         },
+         "about":{
+            "p1":"Bitcoin est une monnaie peer-to-peer. Peer-to-peer signifie qu'aucune autorité centrale émet d'argent neuf ni trace de transactions. Ces tâches sont gérées collectivement par le réseau.",
+            "p2":"Ce site vous permet de naviguer dans la blockchain bitcoin (une base de données qui contient des informations sur toutes les transactions). Nous opérons également le service le plus grand et le plus sûr de portefeuille bitcoin.",
+            "p3":"Pour une introduction aux bitcoins réfèrez-vous à {0}",
+            "header":"À propos"
+         },
+         "header":"Index",
+         "latest_transactions":"Dernières transactions",
+         "title":"Explorateur de blocs Bitcoin - Blockchain.info"
+      },
+      "push_tx":{
+         "p1":"Cette page vous permet de soumettre une transaction brute en hexadécimal (par exemple les caractères 0-9, a-f), sa validité sera alors vérifiée et ensuite transmise sur le réseau.",
+         "title":"Diffusion des transactions - Blockchain.info"
+      },
+      "ip_log":{
+         "sub_header":"Liste des nœuds bitcoin auxquels blockchain.info s'est connecté dans le passé.",
+         "header":"Journal de nœuds Bitcoin",
+         "title":"Journal de nœuds Bitcoin",
+         "last_connected":"Dernière connexion"
+      },
+      "tx_tree":{
+         "meta_description":"Un graphique montrant les sorties de la transaction bitcoin {0}",
+         "cluster_by_address":"Cluster par adresse",
+         "title":"Visualiser la transaction {0} - Blockchain.info"
+      },
+      "ads":{
+         "bitinstant":{
+            "body":"Achetez avec du cash",
+            "title":"Besoin de Bitcoins ?"
+         }
+      },
+      "strange_transactions":{
+         "sub_header":"Transactions contenant des sorties dont nous n'avons pas pu décoder une adresse bitcoin.",
+         "meta_description":"Une liste de bitcoin avec des sorties non-standard"
+      },
+      "propagation":{
+         "sub_header":"Montre la distribution d'une transaction ou d'un bloc dans l'ensemble du réseau",
+         "connected":"Connecté",
+         "disconnected":"Déconnecté",
+         "last_seen":"Vu pour la dernière fois",
+         "first_relayed":"Première relayée",
+         "node_list":"Liste des nœuds",
+         "h3":"Hash de l'inventaire : {0}",
+         "title":"Propagation du réseau Bitcoin - Blockchain.info",
+         "total_relayed":"Total relayé",
+         "network_percent":"Pourcentage du réseau"
+      },
+      "header":{
+         "developer_title":"Outils pour développeurs Blockchain",
+         "wallet_title":"Portefeuille Bictoin",
+         "logo_alt_title":"Explorateur de bloc bitcoin et statistiques monétaires",
+         "home":"Accueil",
+         "stats_title":"Statistiques Bitcoin"
+      },
+      "maintenance":{
+         "p1":"Blockchain.info est actuellement en maintenance. Pour les mises à jour de statut, veuillez consulter {0}. Veuillez nous excuser pour la gêne occasionnée.",
+         "header":"Nous reviendrons dans peu de temps"
+      },
+      "transaction":{
+         "public_note":"Remarque publique :",
+         "unconfirmed_transaction":"Transaction non confirmée !",
+         "escrow":"dépôt fiduciaire",
+         "double_spend":"Double dépense !",
+         "no_inputs":"Aucune entrées (pièces nouvellement générées)"
+      },
+      "errors":{
+         "invalid_bitcoin_adddress":"Adresse Bitcoin invalide",
+         "block_not_found":"Bloc introuvable",
+         "invalid_block_hash":"Hash du bloc est invalide"
+      },
+      "notifications":{
+         "wallet_login":"Identifiant de mon portefeuille",
+         "wallet_welcome_title":"Bienvenue dans votre portefeuille",
+         "two_factor_reset_title":"Réinitialisation de l'identification à deux facteurs",
+         "notifications_limit_body":"Vous avez atteint votre limite de notifications. Les notifications ont été désactivés pour 24 heures",
+         "payment_sent_body":"Un paiement de {0} a été effectué depuis votre portefeuille bitcoin (Approx : {1})",
+         "sms_authentication_code":"Code d'identification de mon portefeuille : {0}",
+         "payment_sent_title":"Paiement Bitcoin envoyé",
+         "malformed_url":"Tentative d'envoi d'une alerte vers une URL mal formée. Les notifications ont été désactivées.",
+         "confirmation_code_title":"Code de confirmation de mon compte My Wallet",
+         "notifications_limit":"Notifications de limite de paiement",
+         "password_hints_title":"Indices de mon portefeuille",
+         "wallet_backup_title":"Sauvegarde de portefeuille",
+         "account_locked_title":"Votre compte My Wallet a été verrouillé"
+      },
+      "orphaned_blocks":{
+         "btc_sent":"BTC envoyés",
+         "meta_description":"Les blocs orphelins sont des blocs valides qui ne font pas partie de la chaîne principale de bloc bitcoin.",
+         "p1":"Les blocs détachés ou orphelins sont des blocs valides qui ne font pas partie de la chaîne principale. Ils peuvent se produire naturellement quand deux mineurs produisent des blocs similaires, ou ils peuvent être causés par un attaquant (avec suffisament de puissance de hash) qui tenterait d'inverser les transactions.",
+         "timestamp":"Date (timestamp)"
+      },
+      "ip_info":{
+         "sub_header":"Les transactions qui ont été d'abord relayées par l'IP {0}",
+         "meta_description":"Transactions bitcoin relayées par l'adresse IP {0}"
+      }
+   },
+   "name":"French",
+   "properties":{
+      "extends":"auto_french"
+   }
 }

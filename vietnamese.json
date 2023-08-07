@@ -1,0 +1,281 @@
+{
+   "flag":"vn.png",
+   "code":"vi",
+   "strings":{
+      "unconfirmed":{
+         
+      },
+      "wallet_new":{
+         "please_read":"Vui lòng đọc {0} và {1} của chúng tôi"
+      },
+      "wallet_app":{
+         "nav":{
+            
+         },
+         "wallet_home":{
+            
+         },
+         "success":{
+            
+         },
+         "receive_money":{
+            
+         },
+         "send_coins":{
+            
+         },
+         "transactions":{
+            
+         },
+         "login":{
+            "resend_link_title":"Không thể tìm thấy mã thư?"
+         },
+         "import_export":{
+            "import_wallet_formats":{
+               
+            },
+            "rpc":{
+               
+            },
+            "import_backup_table":{
+               
+            }
+         },
+         "account_settings":{
+            "nav":{
+               
+            },
+            "password_hints_description":"Nếu bạn quên mật khẩu, gợi ý mật khẩu sẽ hữu dụng trong việc nhớ lại. Nếu nó là 1 địa chỉ hòm thư liên kết với tài khoản của bạn, gợi ý có thể được gửi qua hòm thư cho bạn. Nếu không có hòm thư nào liên kết với tài khoản của bạn, gợi ý sẽ có sẵn cho bất kì ai biết định danh ví của bạn.",
+            "fee_policy_description":"Giao dịch tại Blockchain.info là miễn phí. Tuy nhiên mạng bitcoin có thể yêu cầu phí thợ mỏ bổ sung. Điều này sẽ ảnh hưởng tới tốc độ giao dịch của bạn và hỗ trợ mạng lưới. Thay đổi các thiết lập dưới đây để thay đổi các chính sách phí thợ mỏ mặc định",
+            "second_password_description":"Bạn có thể tùy chọn cài đặt một mật khẩu phụ để yêu cầu mỗi khi tài khoản của bạn thực hiện giao dịch gửi. Đối với những ví có số dư lớn, trình duyệt của bạn có thể sẽ không có phản hồi trong vài phút khi thay đổi tùy chọn này."
+         },
+         "modals":{
+            
+         },
+         "errors":{
+            "alias_in_use":"Bí danh đã được sử dụng bởi một ví khác"
+         },
+         "tooltips":{
+            "balance":{
+               
+            },
+            "connection_status":{
+               
+            }
+         }
+      },
+      "largest_transactions":{
+         
+      },
+      "charts":{
+         "transaction_fees_usd_label":"Phí giao dịch (BTC)",
+         "errors":{
+            
+         }
+      },
+      "wallet_forgot_identifier":{
+         
+      },
+      "transaction_page":{
+         "double_spend":{
+            
+         }
+      },
+      "rejected":{
+         
+      },
+      "footer":{
+         
+      },
+      "popular_addresses":{
+         
+      },
+      "webgl_globe":{
+         
+      },
+      "pools":{
+         
+      },
+      "block_height":{
+         
+      },
+      "hub_nodes":{
+         
+      },
+      "emails":{
+         "tx":{
+            
+         },
+         "confirmation_code":{
+            
+         },
+         "account_locked":{
+            
+         },
+         "two_factor_reset_request":{
+            
+         },
+         "password_hints":{
+            
+         },
+         "welcome":{
+            
+         },
+         "wallet_backup":{
+            
+         }
+      },
+      "transactions_summary":{
+         
+      },
+      "connected_nodes":{
+         
+      },
+      "stats":{
+         "table":{
+            
+         }
+      },
+      "payment_request":{
+         
+      },
+      "about_us":{
+         "privacy_p1":"Chúng tôi ghi lại lịch sử của tất cả các thành phần trên trang cho mục đích phân tích. Lịch sử được truy cập mỗi 7 ngày Chúng tôi không lưu lại bất cứ dữ liệu nào liên quan đến giao dịch được thực hiện bởi dịch vụ Ví của tôi hoặc địa chỉ bitcoin được sử dụng bởi dịch vụ Ví của tôi. Bất kì địa chỉ email, tên skype hoặc các thông tin cá nhân khác sẽ không được chia sẻ cho bên thứ 3 hoặc các nhà quảng cáo."
+      },
+      "double_spends":{
+         
+      },
+      "api_index":{
+         
+      },
+      "block":{
+         "summary_table":{
+            
+         },
+         "hash_table":{
+            
+         }
+      },
+      "wallet_index":{
+         "confused":{
+            
+         },
+         "meta_description":"Ví của tôi là 1 ví bitcoin trực tuyến miễn phí nơi bạn có thể sử dụng trên toàn thế giới, thanh toán với bất kì ai hoàn toàn miễn phí. Chúng tôi thực hiện thanh toán với bitcoin hoàn toàn dễ dàng và an toàn.",
+         "p1":"Ví của tôi là 1 ví bitcoin trực tuyến miễn phí nơi bạn có thể sử dụng trên toàn thế giới, thanh toán với bất kì ai hoàn toàn miễn phí. Chúng tôi thực hiện thanh toán với bitcoin hoàn toàn dễ dàng và an toàn ở bất kì đâu bằng điện thoại hoặc máy tính của bạn.",
+         "features":{
+            
+         },
+         "slides":{
+            
+         },
+         "security":{
+            
+         },
+         "anonymous":{
+            
+         },
+         "control":{
+            
+         },
+         "merchants":{
+            
+         },
+         "easy":{
+            
+         },
+         "tooltips":{
+            
+         }
+      },
+      "misc":{
+         "disclaimer":"Việc sử dụng thuật ngữ tiền trong trang web này chỉ là đề cập đến tiền ảo. Tỷ giá hối đoái hiển thị được cung cấp bởi bên thứ 3 và không phải là 1 dấu hiệu rằng Bitcoin được hỗ trợ bởi bất kì hàng hoá hay tiền bạc nào khác."
+      },
+      "error_page":{
+         
+      },
+      "wallet":{
+         
+      },
+      "address":{
+         "table_summary":{
+            
+         },
+         "table_transactions":{
+            
+         }
+      },
+      "blocks":{
+         
+      },
+      "translations_page":{
+         "steps":{
+            
+         }
+      },
+      "startup_message":{
+         
+      },
+      "relayed_by":{
+         
+      },
+      "home":{
+         "other_links":{
+            
+         },
+         "table_headers":{
+            
+         },
+         "about":{
+            
+         }
+      },
+      "push_tx":{
+         
+      },
+      "ip_log":{
+         
+      },
+      "tx_tree":{
+         
+      },
+      "ads":{
+         "bitinstant":{
+            
+         }
+      },
+      "strange_transactions":{
+         
+      },
+      "propagation":{
+         
+      },
+      "deposit":{
+         
+      },
+      "header":{
+         
+      },
+      "maintenance":{
+         
+      },
+      "transaction":{
+         
+      },
+      "errors":{
+         
+      },
+      "notifications":{
+         
+      },
+      "orphaned_blocks":{
+         
+      },
+      "ip_info":{
+         
+      }
+   },
+   "name":"Vietnam",
+   "properties":{
+      "extends":"auto_vietnamese"
+   }
+}
